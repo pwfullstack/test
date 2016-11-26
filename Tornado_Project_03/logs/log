@@ -1,0 +1,1881 @@
+[W 161122 10:43:28 Passport:11] warning msg
+[E 161122 10:43:28 Passport:12] error msg
+[D 161122 10:46:12 Passport:9] debug msg
+[I 161122 10:46:12 Passport:10] info msg
+[W 161122 10:46:12 Passport:11] warning msg
+[E 161122 10:46:12 Passport:12] error msg
+[I 161122 10:46:12 web:1946] 304 GET / (127.0.0.1) 14.21ms
+[D 161122 10:47:40 Passport:9] debug msg
+[I 161122 10:47:40 Passport:10] info msg
+[W 161122 10:47:40 Passport:11] warning msg
+[E 161122 10:47:40 Passport:12] error msg
+[I 161122 10:47:40 web:1946] 304 GET / (127.0.0.1) 2.97ms
+[E 161122 16:38:38 web:1524] Uncaught exception GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?codeid=123&pcodeid=', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': '127.0.0.1:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|0e983cf2|9f2c5110c852c98b3dea958d787e2853|1479718565', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/0829/Tornado_Project/handlers/VerifyCode.py", line 22, in get
+        name, text, image = captcha.generate_captcha
+    AttributeError: 'module' object has no attribute 'generate_captcha'
+[E 161122 16:38:38 web:1946] 500 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 6.43ms
+[I 161122 16:38:57 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[E 161122 16:39:04 web:1524] Uncaught exception GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?codeid=123&pcodeid=', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': '127.0.0.1:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|0e983cf2|9f2c5110c852c98b3dea958d787e2853|1479718565', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/0829/Tornado_Project/handlers/VerifyCode.py", line 22, in get
+        name, text, image = captcha.generate_captcha()
+    AttributeError: 'module' object has no attribute 'generate_captcha'
+[E 161122 16:39:04 web:1946] 500 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 12.36ms
+[I 161122 16:40:49 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:40:54 web:1946] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 137.36ms
+[I 161122 16:41:35 web:1946] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 16.11ms
+[I 161122 16:42:55 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:43:03 web:1946] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 53.24ms
+[I 161122 16:43:50 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:46:36 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161122 16:46:55 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161122 16:47:15 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[W 161122 16:49:47 web:1946] 404 GET /api/check_login (127.0.0.1) 14.42ms
+[W 161122 16:49:47 web:1946] 404 GET /api/house/index (127.0.0.1) 2.23ms
+[W 161122 16:49:48 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.29ms
+[D 161122 16:49:50 Passport:9] debug msg
+[I 161122 16:49:50 Passport:10] info msg
+[W 161122 16:49:50 Passport:11] warning msg
+[E 161122 16:49:50 Passport:12] error msg
+[I 161122 16:49:50 web:1946] 200 GET / (127.0.0.1) 2.66ms
+[I 161122 16:50:09 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161122 16:50:12 web:1946] 200 GET / (127.0.0.1) 35.20ms
+[I 161122 16:50:12 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 5.76ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 17.64ms
+[I 161122 16:50:13 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.32ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 3.45ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 6.95ms
+[I 161122 16:50:13 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 5.13ms
+[I 161122 16:50:13 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.86ms
+[I 161122 16:50:13 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 9.69ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.64ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 3.60ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 6.17ms
+[I 161122 16:50:14 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 4.83ms
+[I 161122 16:50:14 web:1946] 304 GET /static/js/template.js (127.0.0.1) 8.26ms
+[I 161122 16:50:14 web:1946] 200 GET /static/js/ihome/index.js (127.0.0.1) 2.97ms
+[I 161122 16:50:14 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 2.99ms
+[I 161122 16:50:14 web:1946] 200 GET /static/images/home02.jpg (127.0.0.1) 6.22ms
+[I 161122 16:50:14 web:1946] 200 GET /static/images/home01.jpg (127.0.0.1) 17.13ms
+[I 161122 16:50:15 web:1946] 200 GET /static/images/home03.jpg (127.0.0.1) 11.90ms
+[W 161122 16:50:17 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.12ms
+[I 161122 16:50:20 web:1946] 304 GET /register.html (127.0.0.1) 1.48ms
+[I 161122 16:50:20 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 2.64ms
+[W 161122 16:50:23 web:1521] 400 GET /api/imagecode?p=&c=cf3e943d-5e43-4b3b-9535-7b203d32d201 (127.0.0.1): Missing argument codeid
+[W 161122 16:50:23 web:1946] 400 GET /api/imagecode?p=&c=cf3e943d-5e43-4b3b-9535-7b203d32d201 (127.0.0.1) 1.06ms
+[W 161122 16:50:28 web:1521] 400 GET /api/imagecode?p=&c=cf3e943d-5e43-4b3b-9535-7b203d32d201 (127.0.0.1): Missing argument codeid
+[W 161122 16:50:28 web:1946] 400 GET /api/imagecode?p=&c=cf3e943d-5e43-4b3b-9535-7b203d32d201 (127.0.0.1) 1.29ms
+[I 161122 16:51:31 web:1946] 304 GET /register.html (127.0.0.1) 1.44ms
+[I 161122 16:51:31 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.78ms
+[I 161122 16:51:31 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.57ms
+[I 161122 16:51:31 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.02ms
+[I 161122 16:51:31 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.68ms
+[I 161122 16:51:31 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 3.13ms
+[I 161122 16:51:31 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.68ms
+[I 161122 16:51:32 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.64ms
+[I 161122 16:51:32 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 2.84ms
+[I 161122 16:51:32 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.77ms
+[I 161122 16:51:34 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=ad53fc8c-660f-4935-8120-e6b23182f582 (127.0.0.1) 54.53ms
+[I 161122 16:52:00 web:1946] 200 GET /api/imagecode?pcodeid=ad53fc8c-660f-4935-8120-e6b23182f582&codeid=826bab8f-bec6-4f2d-92da-ed760f09a525 (127.0.0.1) 22.18ms
+[I 161122 16:52:01 web:1946] 200 GET /api/imagecode?pcodeid=826bab8f-bec6-4f2d-92da-ed760f09a525&codeid=5a94e998-3f89-4960-8729-da7fb598f13e (127.0.0.1) 15.22ms
+[I 161122 16:52:02 web:1946] 200 GET /api/imagecode?pcodeid=5a94e998-3f89-4960-8729-da7fb598f13e&codeid=f78a6c48-70fc-4b6a-b564-7e8043903e24 (127.0.0.1) 19.61ms
+[I 161122 16:52:38 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:52:39 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:54:08 web:1946] 200 GET /api/imagecode?pcodeid=f78a6c48-70fc-4b6a-b564-7e8043903e24&codeid=aa67c8da-b879-4d43-8223-5b104fad2f0b (127.0.0.1) 72.05ms
+[I 161122 17:24:33 web:1946] 304 GET /login.html (127.0.0.1) 12.97ms
+[I 161122 17:24:33 web:1946] 304 GET /static/css/ihome/login.css (127.0.0.1) 2.62ms
+[I 161122 17:24:33 web:1946] 200 GET /static/js/ihome/login.js (127.0.0.1) 3.61ms
+[I 161122 17:25:22 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.81ms
+[I 161122 17:25:25 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=f4039f04-bae5-47e7-9b3b-d9d87c5ec12e (127.0.0.1) 35.60ms
+[I 161122 17:27:59 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 08:45:51 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=bca5f5c0-55f8-424f-b2fe-9c0022ae097a (127.0.0.1) 79.12ms
+[I 161123 08:45:53 web:1946] 200 GET /favicon.ico (127.0.0.1) 15.00ms
+[I 161123 08:46:03 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 4.55ms
+[I 161123 09:01:52 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 09:02:24 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 09:02:40 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 09:08:11 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:10:29 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:12:25 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:16:44 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:22:59 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:24:36 autoreload:204] /home/python/0829/Tornado_Project/constants.py modified; restarting server
+[I 161123 09:29:56 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:30:02 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:30:25 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161123 09:30:28 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161123 09:31:51 web:1946] 200 GET /api/imagecode?pcodeid=bca5f5c0-55f8-424f-b2fe-9c0022ae097a&codeid=4a63c28b-f956-4eed-af4e-5ad92a5c916f (127.0.0.1) 92.61ms
+[I 161123 09:32:56 autoreload:204] /home/python/0829/Tornado_Project/config.py modified; restarting server
+[E 161123 09:34:21 web:1524] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop', 'Content-Length': '111', 'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, br', 'Host': '127.0.0.1:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'page_count="2|1:0|10:1479431823|10:page_count|4:Mw==|a706fdc20d467b66bb5fcc2d271283a3a665bc689d1d17f583192792248f6a7d"', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': 'ce0ddd4d-67c7-6966-1a07-5ab8cd1b66cf'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/0829/Tornado_Project/handlers/BaseHandler.py", line 19, in prepare
+        self.json_args = json.loads(self.request.body)
+    NameError: global name 'json' is not defined
+[E 161123 09:34:21 web:1946] 500 POST /api/smscode (127.0.0.1) 5.11ms
+[I 161123 09:34:36 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 09:34:40 web:1946] 200 POST /api/smscode (127.0.0.1) 2.37ms
+[I 161123 09:34:49 web:1946] 200 GET /api/imagecode?pcodeid=4a63c28b-f956-4eed-af4e-5ad92a5c916f&codeid=9c5db723-8fe0-46f3-985b-2b0ca3546b56 (127.0.0.1) 22.28ms
+[I 161123 09:34:56 web:1946] 200 POST /api/smscode (127.0.0.1) 1.88ms
+[I 161123 09:35:16 web:1946] 200 POST /api/smscode (127.0.0.1) 1.05ms
+[I 161123 09:35:37 web:1946] 200 GET /api/imagecode?pcodeid=9c5db723-8fe0-46f3-985b-2b0ca3546b56&codeid=248bf1cf-bd72-4d1c-8c71-974e949da803 (127.0.0.1) 17.26ms
+[I 161123 09:36:06 web:1946] 200 POST /api/smscode (127.0.0.1) 1835.65ms
+[I 161123 09:47:40 web:1946] 304 GET /register.html (127.0.0.1) 14.73ms
+[I 161123 09:47:40 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 12.88ms
+[I 161123 09:47:40 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 7.03ms
+[I 161123 09:47:40 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.45ms
+[I 161123 09:47:40 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.20ms
+[I 161123 09:47:40 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 3.66ms
+[I 161123 09:47:40 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 10.98ms
+[I 161123 09:47:40 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 11.60ms
+[I 161123 09:47:40 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 2.57ms
+[I 161123 09:47:41 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 18.48ms
+[I 161123 09:47:43 web:1946] 304 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 5.87ms
+[I 161123 09:47:43 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=8168f1a3-3da9-44c3-bc6c-56baa3795e99 (127.0.0.1) 22.21ms
+[I 161123 09:48:09 web:1946] 200 POST /api/smscode (127.0.0.1) 1.16ms
+[I 161123 09:48:52 web:1946] 304 GET /register.html (127.0.0.1) 1.03ms
+[I 161123 09:48:52 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.05ms
+[I 161123 09:48:53 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.23ms
+[I 161123 09:48:53 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.06ms
+[I 161123 09:48:53 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 4.06ms
+[I 161123 09:48:53 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.58ms
+[I 161123 09:48:53 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.75ms
+[I 161123 09:48:53 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.53ms
+[I 161123 09:48:53 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.59ms
+[I 161123 09:48:53 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.03ms
+[I 161123 09:48:56 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=8bb6bfe7-a48c-423a-a9ae-27bc6b76958f (127.0.0.1) 22.67ms
+[I 161123 09:49:18 web:1946] 200 POST /api/smscode (127.0.0.1) 444.19ms
+[I 161123 09:50:44 autoreload:204] /usr/lib/python2.7/distutils/debug.py modified; restarting server
+[I 161123 10:08:23 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 10:09:49 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 10:12:55 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 10:13:27 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 11:07:14 autoreload:204] /home/python/0829/Tornado_Project/constants.py modified; restarting server
+[I 161123 11:08:35 autoreload:204] /home/python/0829/Tornado_Project/constants.py modified; restarting server
+[I 161123 11:08:38 autoreload:204] /home/python/0829/Tornado_Project/config.py modified; restarting server
+[I 161123 11:20:06 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 11:20:34 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 11:22:58 autoreload:204] /home/python/0829/Tornado_Project/config.py modified; restarting server
+[I 161123 11:25:18 web:1946] 200 GET /api/imagecode?pcodeid=8bb6bfe7-a48c-423a-a9ae-27bc6b76958f&codeid=83f51da3-da1b-4b1c-902e-31a13a7e5d09 (127.0.0.1) 65.91ms
+[W 161123 11:25:26 web:1521] 403 POST /api/smscode (127.0.0.1): '_xsrf' argument missing from POST
+[W 161123 11:25:26 web:1946] 403 POST /api/smscode (127.0.0.1) 11.12ms
+[I 161123 11:27:25 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161123 11:29:07 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 11:29:30 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161123 11:29:40 web:1946] 304 GET /register.html (127.0.0.1) 15.18ms
+[I 161123 11:29:40 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.76ms
+[I 161123 11:29:40 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.79ms
+[I 161123 11:29:40 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.12ms
+[I 161123 11:29:40 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.74ms
+[I 161123 11:29:40 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 4.34ms
+[I 161123 11:29:40 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 4.65ms
+[I 161123 11:29:40 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.88ms
+[I 161123 11:29:40 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.46ms
+[I 161123 11:29:41 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.75ms
+[I 161123 11:29:43 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=b59861b5-c366-4aa8-b031-0581253c79dc (127.0.0.1) 41.36ms
+[I 161123 11:30:02 web:1946] 200 POST /api/smscode (127.0.0.1) 464.41ms
+[I 161123 11:30:55 web:1946] 304 GET / (127.0.0.1) 7.72ms
+[I 161123 11:30:55 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 4.73ms
+[W 161123 11:30:59 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.05ms
+[I 161123 11:36:32 web:1946] 304 GET /static/js/ihome/login.js (127.0.0.1) 5.90ms
+[W 161123 11:36:40 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.76ms
+[I 161123 11:36:41 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.47ms
+[I 161123 11:36:44 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=0046530c-cfbe-4a24-8571-5705601136a7 (127.0.0.1) 22.64ms
+[I 161123 11:38:03 autoreload:204] /home/python/0829/Tornado_Project/libs/yuntongxun/CCP.py modified; restarting server
+[I 161123 11:38:04 autoreload:204] /home/python/0829/Tornado_Project/libs/yuntongxun/CCP.py modified; restarting server
+[I 161123 14:47:32 autoreload:204] /home/python/0829/Tornado_Project/utils/session.py modified; restarting server
+[I 161123 14:47:38 autoreload:204] /home/python/0829/Tornado_Project/utils/session.py modified; restarting server
+[I 161125 11:43:19 web:1946] 200 GET /my.html (127.0.0.1) 22.16ms
+[I 161125 11:43:19 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 4.97ms
+[I 161125 11:43:19 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.57ms
+[I 161125 11:43:19 web:1946] 200 GET /static/css/reset.css (127.0.0.1) 1.80ms
+[I 161125 11:43:19 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.77ms
+[I 161125 11:43:19 web:1946] 200 GET /static/css/ihome/main.css (127.0.0.1) 9.27ms
+[I 161125 11:43:19 web:1946] 200 GET /static/css/ihome/my.css (127.0.0.1) 3.32ms
+[I 161125 11:43:19 web:1946] 200 GET /static/js/jquery.min.js (127.0.0.1) 2.92ms
+[I 161125 11:43:20 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.04ms
+[I 161125 11:43:20 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 8.14ms
+[I 161125 11:43:20 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.25ms
+[I 161125 11:43:20 web:1946] 200 GET /static/js/ihome/my.js (127.0.0.1) 2.12ms
+[I 161125 11:43:21 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 8.86ms
+[I 161125 11:43:22 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 8.42ms
+[W 161125 11:43:25 web:1946] 404 GET /api/logout (127.0.0.1) 10.23ms
+[W 161125 11:43:27 web:1946] 404 GET /api/logout (127.0.0.1) 3.14ms
+[I 161125 11:43:30 web:1946] 200 GET / (127.0.0.1) 5.99ms
+[I 161125 11:43:30 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 3.01ms
+[I 161125 11:43:30 web:1946] 200 GET /static/css/ihome/index.css (127.0.0.1) 6.45ms
+[I 161125 11:43:31 web:1946] 200 GET /static/images/logo@128x59.png (127.0.0.1) 3.12ms
+[I 161125 11:43:31 web:1946] 200 GET /static/images/home01.jpg (127.0.0.1) 5.64ms
+[I 161125 11:43:31 web:1946] 200 GET /static/images/home02.jpg (127.0.0.1) 6.88ms
+[I 161125 11:43:31 web:1946] 200 GET /static/images/home03.jpg (127.0.0.1) 10.03ms
+[I 161125 11:43:32 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 3.54ms
+[I 161125 11:43:32 web:1946] 200 GET /static/js/template.js (127.0.0.1) 5.12ms
+[I 161125 11:43:32 web:1946] 200 GET /static/js/ihome/index.js (127.0.0.1) 3.45ms
+[I 161125 11:43:34 web:1946] 200 GET /api/check_login (127.0.0.1) 1.95ms
+[W 161125 11:43:34 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.56ms
+[I 161125 11:43:50 web:1946] 200 GET /login.html (127.0.0.1) 6.50ms
+[I 161125 11:43:50 web:1946] 200 GET /static/css/ihome/login.css (127.0.0.1) 2.38ms
+[I 161125 11:43:50 web:1946] 200 GET /static/js/ihome/login.js (127.0.0.1) 4.87ms
+[E 161125 11:43:59 web:1524] Uncaught exception POST /api/login (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/login', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '44', 'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|99407ad6|7bd54c9a2e4ac8758ed9b1d8e88d958c|1479871780', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/login.html', 'Cookie': '_xsrf=2|99407ad6|7bd54c9a2e4ac8758ed9b1d8e88d958c|1479871780; session_id="2|1:0|10:1480037781|10:session_id|44:MGRkOTE2ZWQ3MDE3NGExZjhjNWQ4ZWEyMjNjNGQxYWM=|15a80141456d70416a37145fc2449bcb9800654349aa2b8f531a1f6fa678fac5"', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/0829/Tornado_Project/handlers/Passport.py", line 47, in post
+        password = hashlib.sha256(config.passwd_hash_key + password).hexdigest()
+    AttributeError: 'module' object has no attribute 'passwd_hash_key'
+[E 161125 11:43:59 web:1946] 500 POST /api/login (127.0.0.1) 49.50ms
+[W 161125 13:51:14 web:1946] 404 GET /api/profile (127.0.0.1) 4.42ms
+[I 161125 13:51:15 web:1946] 200 GET /api/check_login (127.0.0.1) 1.23ms
+[W 161125 13:51:15 web:1946] 404 GET /api/house/index (127.0.0.1) 0.92ms
+[W 161125 13:51:16 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.04ms
+[I 161125 13:51:18 web:1946] 200 GET / (127.0.0.1) 9.00ms
+[I 161125 13:51:18 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.08ms
+[I 161125 13:51:18 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.73ms
+[I 161125 13:51:18 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.49ms
+[I 161125 13:51:18 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 1.44ms
+[I 161125 13:51:18 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.73ms
+[I 161125 13:51:18 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.78ms
+[I 161125 13:51:18 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.27ms
+[I 161125 13:51:18 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.84ms
+[I 161125 13:51:18 web:1946] 200 GET /static/images/home01.jpg (127.0.0.1) 3.81ms
+[I 161125 13:51:18 web:1946] 200 GET /static/images/home02.jpg (127.0.0.1) 7.82ms
+[I 161125 13:51:18 web:1946] 200 GET /static/images/home03.jpg (127.0.0.1) 5.06ms
+[I 161125 13:51:19 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.78ms
+[I 161125 13:51:19 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.10ms
+[I 161125 13:51:19 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 2.23ms
+[I 161125 13:51:19 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.85ms
+[I 161125 13:51:19 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.62ms
+[I 161125 13:51:19 web:1946] 304 GET /static/js/template.js (127.0.0.1) 1.46ms
+[I 161125 13:51:19 web:1946] 200 GET /static/js/ihome/index.js (127.0.0.1) 0.82ms
+[I 161125 13:51:19 web:1946] 304 GET /api/check_login (127.0.0.1) 1.15ms
+[I 161125 13:51:20 web:1946] 304 GET / (127.0.0.1) 1.26ms
+[W 161125 13:51:20 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.34ms
+[I 161125 13:51:21 web:1946] 304 GET / (127.0.0.1) 0.89ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 0.99ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.89ms
+[I 161125 13:51:21 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.05ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 1.09ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.80ms
+[I 161125 13:51:21 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.75ms
+[I 161125 13:51:21 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.09ms
+[I 161125 13:51:21 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.93ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.85ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 2.84ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.28ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.75ms
+[I 161125 13:51:21 web:1946] 304 GET /static/js/template.js (127.0.0.1) 2.01ms
+[I 161125 13:51:21 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 0.77ms
+[I 161125 13:51:21 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 0.72ms
+[I 161125 13:51:21 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 2.19ms
+[I 161125 13:51:21 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 2.77ms
+[I 161125 13:51:21 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 1.48ms
+[I 161125 13:51:22 web:1946] 304 GET /api/check_login (127.0.0.1) 1.39ms
+[W 161125 13:51:22 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.22ms
+[I 161125 13:51:27 web:1946] 200 GET /register.html (127.0.0.1) 3.13ms
+[I 161125 13:51:27 web:1946] 200 GET /static/css/ihome/register.css (127.0.0.1) 2.93ms
+[I 161125 13:51:28 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.09ms
+[I 161125 13:51:28 web:1946] 200 POST /api/register (127.0.0.1) 0.73ms
+[I 161125 13:51:28 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=be18d738-f1ba-41c5-9886-c32bbeb1d0d7 (127.0.0.1) 67.17ms
+[W 161125 13:51:35 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 0.93ms
+[I 161125 13:51:35 web:1946] 200 GET /login.html (127.0.0.1) 6.45ms
+[I 161125 13:51:35 web:1946] 200 GET /static/css/ihome/login.css (127.0.0.1) 1.40ms
+[I 161125 13:51:35 web:1946] 200 GET /static/js/ihome/login.js (127.0.0.1) 1.21ms
+[E 161125 13:51:51 web:1524] Uncaught exception POST /api/login (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/login', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '44', 'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|99407ad6|7bd54c9a2e4ac8758ed9b1d8e88d958c|1479871780', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/login.html', 'Cookie': '_xsrf=2|99407ad6|7bd54c9a2e4ac8758ed9b1d8e88d958c|1479871780; session_id="2|1:0|10:1480045479|10:session_id|44:MGRkOTE2ZWQ3MDE3NGExZjhjNWQ4ZWEyMjNjNGQxYWM=|f97448aae5cdbdb54195ea73c62bf7ee331e22711c34adc93173d4ca210e5e26"', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/0829/Tornado_Project/handlers/Passport.py", line 48, in post
+        password = hashlib.sha256(config.passwd_hash_key + password).hexdigest()
+    AttributeError: 'module' object has no attribute 'passwd_hash_key'
+[E 161125 13:51:51 web:1946] 500 POST /api/login (127.0.0.1) 10.49ms
+[I 161125 13:52:45 autoreload:204] /home/python/0829/Tornado_Project/config.py modified; restarting server
+[I 161125 13:52:51 autoreload:204] /home/python/0829/Tornado_Project/config.py modified; restarting server
+[I 161125 13:52:56 web:1946] 200 POST /api/login (127.0.0.1) 5.61ms
+[I 161125 13:52:56 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 8.46ms
+[I 161125 13:52:57 web:1946] 200 GET /api/check_login (127.0.0.1) 1.37ms
+[W 161125 13:52:57 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.11ms
+[I 161125 13:53:28 web:1946] 304 GET / (127.0.0.1) 1.82ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.16ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.21ms
+[I 161125 13:53:28 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.07ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 0.82ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.89ms
+[I 161125 13:53:28 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.74ms
+[I 161125 13:53:28 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.92ms
+[I 161125 13:53:28 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.14ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.76ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 0.87ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.52ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.71ms
+[I 161125 13:53:28 web:1946] 304 GET /static/js/template.js (127.0.0.1) 1.29ms
+[I 161125 13:53:28 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 0.74ms
+[I 161125 13:53:28 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.42ms
+[I 161125 13:53:28 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 2.03ms
+[I 161125 13:53:28 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 1.78ms
+[I 161125 13:53:29 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 1.82ms
+[I 161125 13:53:29 web:1946] 304 GET /api/check_login (127.0.0.1) 1.33ms
+[W 161125 13:53:29 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.61ms
+[I 161125 13:54:00 web:1946] 304 GET / (127.0.0.1) 1.25ms
+[I 161125 13:54:00 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.69ms
+[I 161125 13:54:00 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.17ms
+[I 161125 13:54:00 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.40ms
+[I 161125 13:54:00 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 1.69ms
+[I 161125 13:54:00 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.91ms
+[I 161125 13:54:00 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.01ms
+[I 161125 13:54:00 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 0.68ms
+[I 161125 13:54:00 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.16ms
+[I 161125 13:54:00 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.26ms
+[I 161125 13:54:00 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 1.88ms
+[I 161125 13:54:01 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.25ms
+[I 161125 13:54:01 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.50ms
+[I 161125 13:54:01 web:1946] 304 GET /static/js/template.js (127.0.0.1) 0.80ms
+[I 161125 13:54:01 web:1946] 200 GET /static/js/ihome/index.js (127.0.0.1) 0.96ms
+[I 161125 13:54:01 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 0.72ms
+[I 161125 13:54:01 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 1.71ms
+[I 161125 13:54:01 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 2.80ms
+[I 161125 13:54:01 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 2.09ms
+[I 161125 13:54:01 web:1946] 304 GET /api/check_login (127.0.0.1) 1.88ms
+[W 161125 13:54:02 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 0.87ms
+[W 161125 13:54:05 web:1946] 404 GET /api/profile (127.0.0.1) 1.81ms
+[I 161125 13:54:08 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 2.28ms
+[I 161125 13:54:09 web:1946] 304 GET /api/check_login (127.0.0.1) 0.96ms
+[W 161125 13:54:09 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 0.85ms
+[I 161125 16:56:06 web:1946] 200 GET /api/check_login (127.0.0.1) 2.82ms
+[I 161125 16:57:00 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 12.01ms
+[I 161125 16:57:01 web:1946] 200 POST /api/register (127.0.0.1) 12.21ms
+[E 161125 16:57:01 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 16:57:01 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=54a646ab-9e17-45d7-8afa-ab8c3e11f554 (127.0.0.1) 100.37ms
+[E 161125 16:57:02 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 16:57:02 web:1946] 304 GET /api/imagecode?pcodeid=&codeid=54a646ab-9e17-45d7-8afa-ab8c3e11f554 (127.0.0.1) 35.71ms
+[E 161125 16:57:09 VerifyCode:22] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 16:57:09 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 16:57:09 web:1946] 200 GET /api/imagecode?pcodeid=54a646ab-9e17-45d7-8afa-ab8c3e11f554&codeid=c84c412b-6717-4ca9-91e3-f361de8442cc (127.0.0.1) 17.96ms
+[E 161125 16:57:10 VerifyCode:22] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 16:57:10 VerifyCode:30] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[I 161125 16:57:10 web:1946] 304 GET /api/imagecode?pcodeid=54a646ab-9e17-45d7-8afa-ab8c3e11f554&codeid=c84c412b-6717-4ca9-91e3-f361de8442cc (127.0.0.1) 18.33ms
+[W 161125 16:59:28 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.20ms
+[I 161125 16:59:30 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.64ms
+[I 161125 16:59:31 web:1946] 200 POST /api/register (127.0.0.1) 2.39ms
+[E 161125 16:59:31 VerifyCode:30] NOAUTH Authentication required.
+[I 161125 16:59:31 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=b1ec05c3-5a1e-4f0b-bb77-2a22ff8a6726 (127.0.0.1) 43.18ms
+[E 161125 16:59:45 VerifyCode:22] NOAUTH Authentication required.
+[E 161125 16:59:45 VerifyCode:30] NOAUTH Authentication required.
+[I 161125 16:59:45 web:1946] 200 GET /api/imagecode?pcodeid=b1ec05c3-5a1e-4f0b-bb77-2a22ff8a6726&codeid=217a895d-d25f-43e4-ab05-92f4046b8dc4 (127.0.0.1) 28.44ms
+[E 161125 16:59:46 VerifyCode:22] NOAUTH Authentication required.
+[E 161125 16:59:46 VerifyCode:30] NOAUTH Authentication required.
+[I 161125 16:59:46 web:1946] 200 GET /api/imagecode?pcodeid=217a895d-d25f-43e4-ab05-92f4046b8dc4&codeid=93fede2c-e5b4-4c57-a407-72eb747b6c68 (127.0.0.1) 34.99ms
+[E 161125 16:59:47 VerifyCode:22] NOAUTH Authentication required.
+[E 161125 16:59:47 VerifyCode:30] NOAUTH Authentication required.
+[I 161125 16:59:47 web:1946] 200 GET /api/imagecode?pcodeid=93fede2c-e5b4-4c57-a407-72eb747b6c68&codeid=76bff0b3-8d8f-4eec-922e-d68b24cb0c25 (127.0.0.1) 30.07ms
+[E 161125 16:59:48 VerifyCode:22] NOAUTH Authentication required.
+[E 161125 16:59:48 VerifyCode:30] NOAUTH Authentication required.
+[I 161125 16:59:48 web:1946] 200 GET /api/imagecode?pcodeid=76bff0b3-8d8f-4eec-922e-d68b24cb0c25&codeid=213e5f67-dbe1-4734-9218-2d5ef3fbc467 (127.0.0.1) 37.79ms
+[I 161125 17:01:47 autoreload:204] /home/python/Desktop/Tornado_Project_03/config.py modified; restarting server
+[W 161125 17:02:24 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 11.16ms
+[I 161125 17:02:26 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 16.28ms
+[I 161125 17:02:27 web:1946] 200 POST /api/register (127.0.0.1) 2.14ms
+[I 161125 17:02:27 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=ca4e34ae-2831-498a-93b3-978b08273b30 (127.0.0.1) 76.27ms
+[I 161125 17:03:21 autoreload:204] /home/python/Desktop/Tornado_Project_03/libs/yuntongxun/CCP.py modified; restarting server
+[I 161125 17:03:36 autoreload:204] /home/python/Desktop/Tornado_Project_03/libs/yuntongxun/CCP.py modified; restarting server
+[I 161125 17:03:37 autoreload:204] /home/python/Desktop/Tornado_Project_03/libs/yuntongxun/CCP.py modified; restarting server
+[I 161125 17:03:50 autoreload:204] /home/python/Desktop/Tornado_Project_03/libs/yuntongxun/CCP.py modified; restarting server
+[I 161125 17:03:52 autoreload:204] /home/python/Desktop/Tornado_Project_03/libs/yuntongxun/CCP.py modified; restarting server
+[I 161125 17:03:58 web:1946] 304 GET /register.html (127.0.0.1) 21.30ms
+[I 161125 17:03:58 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.36ms
+[I 161125 17:03:58 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 4.11ms
+[I 161125 17:03:58 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.79ms
+[I 161125 17:03:58 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 5.76ms
+[I 161125 17:03:58 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 5.05ms
+[I 161125 17:03:58 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.61ms
+[I 161125 17:03:58 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.55ms
+[I 161125 17:03:58 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.05ms
+[I 161125 17:03:58 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 5.50ms
+[I 161125 17:03:59 web:1946] 200 POST /api/register (127.0.0.1) 1.88ms
+[I 161125 17:03:59 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=455443a3-6193-483e-a73f-809a093c86db (127.0.0.1) 66.87ms
+[I 161125 17:04:14 web:1946] 200 POST /api/smscode (127.0.0.1) 1390.06ms
+[I 161125 17:08:36 web:1946] 304 GET /login.html (127.0.0.1) 1.60ms
+[I 161125 17:08:36 web:1946] 304 GET /static/css/ihome/login.css (127.0.0.1) 1.41ms
+[I 161125 17:08:36 web:1946] 200 GET /static/js/ihome/login.js (127.0.0.1) 1.63ms
+[I 161125 17:08:50 web:1946] 200 POST /api/login (127.0.0.1) 48.03ms
+[I 161125 17:08:56 web:1946] 200 POST /api/login (127.0.0.1) 2.19ms
+[I 161125 17:09:15 web:1946] 304 GET /login.html (127.0.0.1) 1.89ms
+[I 161125 17:09:15 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.83ms
+[I 161125 17:09:15 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.91ms
+[I 161125 17:09:15 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.59ms
+[I 161125 17:09:15 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.30ms
+[I 161125 17:09:15 web:1946] 304 GET /static/css/ihome/login.css (127.0.0.1) 1.29ms
+[I 161125 17:09:15 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.42ms
+[I 161125 17:09:15 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.68ms
+[I 161125 17:09:15 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.87ms
+[I 161125 17:09:15 web:1946] 304 GET /static/js/ihome/login.js (127.0.0.1) 1.79ms
+[I 161125 17:09:19 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.51ms
+[I 161125 17:09:20 web:1946] 200 POST /api/register (127.0.0.1) 1.87ms
+[I 161125 17:09:20 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=6bd88650-7a22-46bf-8404-b5646b3f4cf5 (127.0.0.1) 30.10ms
+[I 161125 17:24:09 web:1946] 304 GET /register.html (127.0.0.1) 59.50ms
+[I 161125 17:24:10 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.20ms
+[I 161125 17:24:10 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 6.32ms
+[I 161125 17:24:10 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.48ms
+[I 161125 17:24:10 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.31ms
+[I 161125 17:24:10 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.31ms
+[I 161125 17:24:10 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.39ms
+[I 161125 17:24:10 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 7.17ms
+[I 161125 17:24:10 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.42ms
+[I 161125 17:24:10 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.59ms
+[I 161125 17:24:10 web:1946] 200 POST /api/register (127.0.0.1) 17.69ms
+[I 161125 17:24:11 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=5a2e3054-a02c-4bd0-b12c-fb70ba19e177 (127.0.0.1) 99.39ms
+[I 161125 17:28:20 autoreload:204] /home/python/Desktop/Tornado_Project_03/urls.py modified; restarting server
+[I 161125 17:29:13 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/BaseHandler.py modified; restarting server
+[I 161125 17:29:40 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Passport.py modified; restarting server
+[I 161125 17:34:28 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Passport.py modified; restarting server
+[I 161125 17:34:50 web:1946] 304 GET /register.html (127.0.0.1) 20.02ms
+[I 161125 17:34:50 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.96ms
+[I 161125 17:34:50 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.61ms
+[I 161125 17:34:50 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.33ms
+[I 161125 17:34:50 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.53ms
+[I 161125 17:34:50 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.48ms
+[I 161125 17:34:50 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.73ms
+[I 161125 17:34:50 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.17ms
+[I 161125 17:34:50 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.72ms
+[I 161125 17:34:50 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.20ms
+[I 161125 17:34:51 web:1946] 200 POST /api/register (127.0.0.1) 1.98ms
+[I 161125 17:34:51 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=cc2a419c-7979-4a03-8958-c9b0767d5328 (127.0.0.1) 60.71ms
+[I 161125 17:35:02 web:1946] 200 GET /api/imagecode?pcodeid=cc2a419c-7979-4a03-8958-c9b0767d5328&codeid=65f00383-3e6b-402c-b727-4a91c8596ee2 (127.0.0.1) 24.43ms
+[I 161125 17:35:03 web:1946] 200 GET /api/imagecode?pcodeid=65f00383-3e6b-402c-b727-4a91c8596ee2&codeid=5084447c-938f-4446-981d-31f68aa3bb74 (127.0.0.1) 18.78ms
+[I 161125 17:35:11 web:1946] 200 POST /api/smscode (127.0.0.1) 1351.35ms
+[I 161125 17:41:13 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/VerifyCode.py modified; restarting server
+[I 161125 17:41:54 web:1946] 304 GET /register.html (127.0.0.1) 21.31ms
+[I 161125 17:41:54 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.76ms
+[I 161125 17:41:54 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 6.11ms
+[I 161125 17:41:54 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.29ms
+[I 161125 17:41:54 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.88ms
+[I 161125 17:41:54 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 3.47ms
+[I 161125 17:41:54 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.54ms
+[I 161125 17:41:54 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.27ms
+[I 161125 17:41:54 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.47ms
+[I 161125 17:41:54 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.45ms
+[I 161125 17:41:55 web:1946] 200 POST /api/register (127.0.0.1) 1.68ms
+[I 161125 17:41:55 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=e0b1b99d-f9fb-4048-8a56-edde0d0940d6 (127.0.0.1) 63.32ms
+[I 161125 17:42:04 web:1946] 200 GET /api/imagecode?pcodeid=e0b1b99d-f9fb-4048-8a56-edde0d0940d6&codeid=9b4fdaf0-9989-41c6-93be-a387cc1f82aa (127.0.0.1) 32.93ms
+[I 161125 17:42:08 web:1946] 200 GET /api/imagecode?pcodeid=9b4fdaf0-9989-41c6-93be-a387cc1f82aa&codeid=c68a5974-f6cc-4861-bd83-af5da6fa0896 (127.0.0.1) 65.01ms
+[I 161125 17:45:13 web:1946] 304 GET /register.html (127.0.0.1) 1.86ms
+[I 161125 17:45:13 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.30ms
+[I 161125 17:45:13 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.69ms
+[I 161125 17:45:13 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 2.15ms
+[I 161125 17:45:13 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.46ms
+[I 161125 17:45:13 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.60ms
+[I 161125 17:45:13 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.62ms
+[I 161125 17:45:13 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.99ms
+[I 161125 17:45:13 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.09ms
+[I 161125 17:45:13 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 5.75ms
+[I 161125 17:45:14 web:1946] 200 POST /api/register (127.0.0.1) 7.04ms
+[I 161125 17:45:14 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=77e89d3e-3c7d-4f7b-a01c-edecfb8403a1 (127.0.0.1) 64.84ms
+[I 161125 17:45:24 web:1946] 200 GET /api/imagecode?pcodeid=77e89d3e-3c7d-4f7b-a01c-edecfb8403a1&codeid=8ceea21a-d537-4cf3-ab4c-4603d7c8c6e5 (127.0.0.1) 32.26ms
+[I 161125 17:49:27 autoreload:204] /home/python/Desktop/Tornado_Project_03/urls.py modified; restarting server
+[I 161125 17:49:30 web:1946] 304 GET /register.html (127.0.0.1) 16.05ms
+[I 161125 17:49:31 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.02ms
+[I 161125 17:49:31 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 5.13ms
+[I 161125 17:49:31 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 2.51ms
+[I 161125 17:49:31 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 2.19ms
+[I 161125 17:49:31 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 6.78ms
+[I 161125 17:49:31 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.24ms
+[I 161125 17:49:31 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.63ms
+[I 161125 17:49:31 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.72ms
+[I 161125 17:49:31 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.72ms
+[I 161125 17:49:31 web:1946] 200 POST /api/register (127.0.0.1) 1.64ms
+[I 161125 17:49:31 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=93585121-ff4e-478d-9fea-f11d383fda14 (127.0.0.1) 79.52ms
+[I 161125 17:49:36 web:1946] 304 GET /static/js/ihome/login.js (127.0.0.1) 1.56ms
+[I 161125 17:49:38 web:1946] 200 POST /api/register (127.0.0.1) 2.22ms
+[I 161125 17:49:38 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=75652bb8-ff08-4125-bfd4-2ad02e725513 (127.0.0.1) 25.19ms
+[I 161125 17:50:18 web:1946] 200 POST /api/smscode (127.0.0.1) 407.39ms
+[I 161125 17:51:35 autoreload:204] /home/python/Desktop/Tornado_Project_03/urls.py modified; restarting server
+[I 161125 17:57:07 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Passport.py modified; restarting server
+[I 161125 17:57:20 web:1946] 304 GET /register.html (127.0.0.1) 1806.99ms
+[I 161125 17:59:53 web:1946] 200 GET /register.html (127.0.0.1) 1.99ms
+[I 161125 17:59:56 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 997.13ms
+[I 161125 17:59:56 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.38ms
+[I 161125 17:59:56 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 7.78ms
+[I 161125 17:59:56 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.65ms
+[I 161125 17:59:56 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.42ms
+[I 161125 17:59:56 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.35ms
+[I 161125 17:59:56 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.63ms
+[I 161125 17:59:56 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 48.60ms
+[I 161125 17:59:56 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 10.46ms
+[I 161125 17:59:58 web:1946] 200 POST /api/register (127.0.0.1) 2.45ms
+[I 161125 17:59:58 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=dcb22601-1261-4b8a-a765-fd8b2a525c89 (127.0.0.1) 127.34ms
+[I 161125 18:00:39 web:1946] 200 POST /api/smscode (127.0.0.1) 325.00ms
+[I 161125 18:02:07 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Passport.py modified; restarting server
+[I 161125 18:02:09 web:1946] 304 GET /register.html (127.0.0.1) 23.50ms
+[I 161125 18:02:10 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.63ms
+[I 161125 18:02:10 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.86ms
+[I 161125 18:02:10 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.19ms
+[I 161125 18:02:10 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.69ms
+[I 161125 18:02:10 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 5.87ms
+[I 161125 18:02:10 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 8.46ms
+[I 161125 18:02:10 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 6.25ms
+[I 161125 18:02:10 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.60ms
+[I 161125 18:02:10 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.60ms
+[I 161125 18:02:10 web:1946] 200 POST /api/register (127.0.0.1) 1.62ms
+[I 161125 18:02:11 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=e2c6096b-70e7-4d61-84db-bc7ecf6431b2 (127.0.0.1) 92.80ms
+[I 161125 18:02:29 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Passport.py modified; restarting server
+[I 161125 18:02:31 web:1946] 304 GET /register.html (127.0.0.1) 14.26ms
+[I 161125 18:02:31 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.17ms
+[I 161125 18:02:31 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.54ms
+[I 161125 18:02:31 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.32ms
+[I 161125 18:02:31 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.39ms
+[I 161125 18:02:31 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.35ms
+[I 161125 18:02:31 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.43ms
+[I 161125 18:02:31 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.23ms
+[I 161125 18:02:31 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.65ms
+[I 161125 18:02:31 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.15ms
+[I 161125 18:02:31 web:1946] 200 POST /api/register (127.0.0.1) 2.27ms
+[I 161125 18:02:31 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=0829a6f4-a6bd-4f12-85bf-a08179ef1883 (127.0.0.1) 54.37ms
+[I 161125 18:10:32 web:1946] 304 GET /register.html (127.0.0.1) 15.80ms
+[I 161125 18:10:32 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.12ms
+[I 161125 18:10:32 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.67ms
+[I 161125 18:10:32 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.49ms
+[I 161125 18:10:32 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.47ms
+[I 161125 18:10:32 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.95ms
+[I 161125 18:10:32 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 2.03ms
+[I 161125 18:10:32 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.23ms
+[I 161125 18:10:32 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.11ms
+[I 161125 18:10:32 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.65ms
+[I 161125 18:10:33 web:1946] 200 POST /api/register (127.0.0.1) 2.30ms
+[I 161125 18:10:33 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=63186ee4-9e6a-4dcc-9f19-3aed8bf4cbee (127.0.0.1) 58.29ms
+[I 161125 18:12:08 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Passport.py modified; restarting server
+[I 161125 18:12:11 web:1946] 304 GET /register.html (127.0.0.1) 73.89ms
+[I 161125 18:12:12 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.47ms
+[I 161125 18:12:12 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.66ms
+[I 161125 18:12:12 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.79ms
+[I 161125 18:12:12 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 6.03ms
+[I 161125 18:12:12 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 16.66ms
+[I 161125 18:12:12 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.63ms
+[I 161125 18:12:12 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.64ms
+[I 161125 18:12:12 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.38ms
+[I 161125 18:12:12 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.57ms
+[I 161125 18:12:12 web:1946] 200 POST /api/register (127.0.0.1) 2.08ms
+[I 161125 18:12:12 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=e94f6b24-ea37-42f3-9bac-8767ab2e1738 (127.0.0.1) 80.25ms
+[I 161125 18:12:33 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Passport.py modified; restarting server
+[I 161125 18:12:35 web:1946] 304 GET /register.html (127.0.0.1) 23.31ms
+[I 161125 18:12:36 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.42ms
+[I 161125 18:12:36 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.43ms
+[I 161125 18:12:36 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.33ms
+[I 161125 18:12:36 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 6.21ms
+[I 161125 18:12:36 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 4.24ms
+[I 161125 18:12:36 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.47ms
+[I 161125 18:12:36 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.09ms
+[I 161125 18:12:36 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.09ms
+[I 161125 18:12:36 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 3.77ms
+[I 161125 18:12:36 web:1946] 200 POST /api/register (127.0.0.1) 1.99ms
+[I 161125 18:12:36 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=465b6986-293f-4c14-a126-629c0391ea1e (127.0.0.1) 63.12ms
+[I 161125 18:14:07 web:1946] 304 GET /register.html (127.0.0.1) 1.85ms
+[I 161125 18:14:07 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.28ms
+[I 161125 18:14:07 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.74ms
+[I 161125 18:14:07 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.96ms
+[I 161125 18:14:07 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.68ms
+[I 161125 18:14:07 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.74ms
+[I 161125 18:14:07 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.70ms
+[I 161125 18:14:07 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.08ms
+[I 161125 18:14:07 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.68ms
+[I 161125 18:14:07 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 12.16ms
+[I 161125 18:14:08 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=24b3c4c9-55f0-43a3-a7f0-fae649c3bb02 (127.0.0.1) 32.32ms
+[I 161125 18:14:31 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Passport.py modified; restarting server
+[I 161125 18:14:34 web:1946] 304 GET /register.html (127.0.0.1) 31.81ms
+[I 161125 18:14:34 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.64ms
+[I 161125 18:14:34 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 7.12ms
+[I 161125 18:14:34 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.72ms
+[I 161125 18:14:34 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.60ms
+[I 161125 18:14:34 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.57ms
+[I 161125 18:14:34 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.43ms
+[I 161125 18:14:34 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 5.25ms
+[I 161125 18:14:35 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.94ms
+[I 161125 18:14:35 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.67ms
+[I 161125 18:14:35 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=11d3b4b6-a798-4ea9-a93c-24710f5dd801 (127.0.0.1) 71.08ms
+[I 161125 18:14:50 web:1946] 200 GET /api/imagecode?pcodeid=11d3b4b6-a798-4ea9-a93c-24710f5dd801&codeid=787fd0e1-ee9d-4cfd-a920-0a4611351ce7 (127.0.0.1) 29.25ms
+[I 161125 18:14:51 web:1946] 200 GET /api/imagecode?pcodeid=787fd0e1-ee9d-4cfd-a920-0a4611351ce7&codeid=5b43f679-64b3-4aa1-af2f-9206eb9e4059 (127.0.0.1) 36.28ms
+[I 161125 18:14:53 web:1946] 200 GET /api/imagecode?pcodeid=5b43f679-64b3-4aa1-af2f-9206eb9e4059&codeid=c24650ae-e6f4-4171-ae03-1645b7c6a3cf (127.0.0.1) 34.99ms
+[I 161125 18:15:24 web:1946] 200 POST /api/smscode (127.0.0.1) 21080.66ms
+[I 161125 18:15:47 web:1946] 200 POST /api/register (127.0.0.1) 290.75ms
+[I 161125 18:15:47 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 1.64ms
+[I 161125 18:15:48 web:1946] 200 GET /api/check_login (127.0.0.1) 2.35ms
+[W 161125 18:15:51 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.32ms
+[W 161125 18:16:01 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.77ms
+[I 161125 18:16:30 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Passport.py modified; restarting server
+[I 161125 18:16:37 web:1946] 304 GET / (127.0.0.1) 14.13ms
+[I 161125 18:16:37 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.32ms
+[I 161125 18:16:37 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.04ms
+[I 161125 18:16:37 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.01ms
+[I 161125 18:16:37 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 1.86ms
+[I 161125 18:16:37 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.78ms
+[I 161125 18:16:37 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.34ms
+[I 161125 18:16:37 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 2.65ms
+[I 161125 18:16:37 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.72ms
+[I 161125 18:16:37 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.24ms
+[I 161125 18:16:37 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 2.15ms
+[I 161125 18:16:37 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.48ms
+[I 161125 18:16:37 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.40ms
+[I 161125 18:16:37 web:1946] 304 GET /static/js/template.js (127.0.0.1) 1.55ms
+[I 161125 18:16:37 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 12.82ms
+[I 161125 18:16:37 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.59ms
+[I 161125 18:16:37 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 29.61ms
+[I 161125 18:16:37 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 33.93ms
+[I 161125 18:16:37 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 15.87ms
+[I 161125 18:16:38 web:1946] 304 GET /api/check_login (127.0.0.1) 2.60ms
+[W 161125 18:16:38 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.68ms
+[I 161125 20:00:51 web:1946] 200 GET /my.html (127.0.0.1) 302.58ms
+[I 161125 20:00:53 web:1946] 200 GET /static/css/ihome/my.css (127.0.0.1) 48.82ms
+[I 161125 20:00:55 web:1946] 200 GET /static/js/ihome/my.js (127.0.0.1) 1.77ms
+[I 161125 20:01:14 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 51.74ms
+[I 161125 20:01:14 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 1.90ms
+[I 161125 20:01:19 web:1946] 304 GET /api/check_login (127.0.0.1) 114.70ms
+[W 161125 20:01:20 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 25.13ms
+[I 161125 20:02:48 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/session.py modified; restarting server
+[I 161125 20:04:00 web:1946] 304 GET /api/check_login (127.0.0.1) 128.44ms
+[I 161125 20:10:14 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Passport.py modified; restarting server
+[I 161125 20:11:04 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Passport.py modified; restarting server
+[I 161125 20:11:47 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Passport.py modified; restarting server
+[I 161125 20:11:51 web:1946] 304 GET / (127.0.0.1) 22.77ms
+[I 161125 20:11:51 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 23.69ms
+[I 161125 20:11:51 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.80ms
+[I 161125 20:11:51 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.63ms
+[I 161125 20:11:51 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.93ms
+[I 161125 20:11:51 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.47ms
+[I 161125 20:11:51 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 21.00ms
+[I 161125 20:11:51 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 5.00ms
+[I 161125 20:11:51 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.92ms
+[I 161125 20:11:51 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 21.82ms
+[I 161125 20:11:51 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.55ms
+[I 161125 20:11:51 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 12.12ms
+[I 161125 20:11:51 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.86ms
+[I 161125 20:11:51 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.15ms
+[I 161125 20:11:51 web:1946] 304 GET /static/js/template.js (127.0.0.1) 2.51ms
+[I 161125 20:11:51 web:1946] 200 GET /static/js/ihome/index.js (127.0.0.1) 2.05ms
+[I 161125 20:11:51 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 58.87ms
+[I 161125 20:11:51 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 14.89ms
+[I 161125 20:11:51 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 61.94ms
+[I 161125 20:11:52 web:1946] 200 GET /api/check_login (127.0.0.1) 3.38ms
+[W 161125 20:11:52 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 6.56ms
+[I 161125 20:13:43 web:1946] 200 GET /profile.html (127.0.0.1) 2.28ms
+[I 161125 20:13:43 web:1946] 200 GET /static/css/ihome/profile.css (127.0.0.1) 2.09ms
+[I 161125 20:13:43 web:1946] 200 GET /static/js/ihome/profile.js (127.0.0.1) 1.57ms
+[I 161125 20:13:43 web:1946] 200 GET /static/js/jquery.form.min.js (127.0.0.1) 62.79ms
+[W 161125 20:19:15 web:1946] 405 POST /api/profile/avatar (127.0.0.1) 12.87ms
+[I 161125 20:19:27 web:1946] 304 GET /profile.html (127.0.0.1) 1.70ms
+[I 161125 20:19:28 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 9.93ms
+[I 161125 20:19:28 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.89ms
+[I 161125 20:19:28 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 9.09ms
+[I 161125 20:19:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.77ms
+[I 161125 20:19:28 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.55ms
+[I 161125 20:19:28 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.53ms
+[I 161125 20:19:28 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.85ms
+[I 161125 20:19:28 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.69ms
+[I 161125 20:19:28 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.11ms
+[I 161125 20:19:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.68ms
+[I 161125 20:19:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.44ms
+[I 161125 20:19:28 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.82ms
+[W 161125 20:20:02 web:1946] 405 POST /api/profile/avatar (127.0.0.1) 4.15ms
+[I 161125 20:20:16 web:1946] 304 GET /profile.html (127.0.0.1) 2.49ms
+[I 161125 20:20:16 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 8.48ms
+[I 161125 20:20:16 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.22ms
+[I 161125 20:20:16 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 5.47ms
+[I 161125 20:20:16 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.49ms
+[I 161125 20:20:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 7.26ms
+[I 161125 20:20:16 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.35ms
+[I 161125 20:20:16 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.04ms
+[I 161125 20:20:16 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 4.58ms
+[I 161125 20:20:17 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.76ms
+[I 161125 20:20:17 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 4.15ms
+[I 161125 20:20:17 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.27ms
+[I 161125 20:20:17 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 2.35ms
+[I 161125 20:21:12 autoreload:204] /home/python/Desktop/Tornado_Project_03/urls.py modified; restarting server
+[I 161125 20:22:05 autoreload:204] /home/python/Desktop/Tornado_Project_03/urls.py modified; restarting server
+[I 161125 20:22:46 autoreload:204] /home/python/Desktop/Tornado_Project_03/urls.py modified; restarting server
+[I 161125 20:51:25 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 15.92ms
+[I 161125 20:51:28 web:1946] 304 GET /api/check_login (127.0.0.1) 45.90ms
+[W 161125 20:51:28 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 35.11ms
+[E 161125 20:51:54 web:1524] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '28840', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|d9c95f57|d10cf191e27c31e27548a36160ce738a|1480075440', 'Host': '127.0.0.1:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': 'session_id="2|1:0|10:1480068947|10:session_id|44:ZWJiYzg1ODVhMzc4NGM3NzljY2MyMTUzYWE4NzQwNDI=|bf1d4bfb83fcecc12ebe9aa36cee1f279b70b43c76b99f35fc6ab8c00e418e3a"; _xsrf=2|d9c95f57|d10cf191e27c31e27548a36160ce738a|1480075440', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryPPaAkk2nRHM4zzGa'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/Tornado_Project_03/utils/common.py", line 12, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "/home/python/Desktop/Tornado_Project_03/handlers/Profile.py", line 14, in post
+        image_url_prefix = oh77d3vj2.bkt.clouddn.com
+    NameError: global name 'oh77d3vj2' is not defined
+[E 161125 20:51:54 web:1946] 500 POST /api/profile/avatar (127.0.0.1) 10.99ms
+[I 161125 20:52:37 web:1946] 304 GET /profile.html (127.0.0.1) 2.29ms
+[I 161125 20:52:37 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.35ms
+[I 161125 20:52:37 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.99ms
+[I 161125 20:52:38 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.54ms
+[I 161125 20:52:38 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.84ms
+[I 161125 20:52:38 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.50ms
+[I 161125 20:52:38 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 4.31ms
+[I 161125 20:52:38 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 14.92ms
+[I 161125 20:52:38 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.65ms
+[I 161125 20:52:38 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.75ms
+[I 161125 20:52:38 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.75ms
+[I 161125 20:52:38 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.89ms
+[I 161125 20:52:38 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.69ms
+[I 161125 20:53:51 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 20:54:09 web:1946] 304 GET /api/check_login (127.0.0.1) 4.76ms
+[W 161125 20:54:10 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.91ms
+[D 161125 20:54:22 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 20:54:23 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 20:54:23 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 20:54:24 Profile:24] 上传文件到七牛错误
+[I 161125 20:54:24 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 1688.82ms
+[I 161125 20:55:41 web:1946] 304 GET /profile.html (127.0.0.1) 11.80ms
+[I 161125 20:55:42 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.44ms
+[I 161125 20:55:42 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.70ms
+[I 161125 20:55:42 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.46ms
+[I 161125 20:55:42 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.42ms
+[I 161125 20:55:42 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.12ms
+[I 161125 20:55:42 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.40ms
+[I 161125 20:55:42 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 3.44ms
+[I 161125 20:55:42 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 4.59ms
+[I 161125 20:55:42 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.01ms
+[I 161125 20:55:42 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.43ms
+[I 161125 20:55:42 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 4.34ms
+[I 161125 20:55:42 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.63ms
+[I 161125 21:00:56 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[D 161125 21:02:30 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:02:30 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:02:30 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:02:31 Profile:24] 上传文件到七牛错误
+[I 161125 21:02:31 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 332.91ms
+[I 161125 21:05:22 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:05:25 web:1946] 304 GET /profile.html (127.0.0.1) 24.13ms
+[I 161125 21:05:26 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.23ms
+[I 161125 21:05:26 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.85ms
+[I 161125 21:05:26 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.28ms
+[I 161125 21:05:26 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.58ms
+[I 161125 21:05:26 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.09ms
+[I 161125 21:05:26 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 3.99ms
+[I 161125 21:05:26 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.67ms
+[I 161125 21:05:26 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 7.02ms
+[I 161125 21:05:26 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 5.72ms
+[I 161125 21:05:26 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.78ms
+[I 161125 21:05:26 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 4.00ms
+[I 161125 21:05:26 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.43ms
+[D 161125 21:05:33 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:05:33 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:05:33 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:05:33 Profile:25] 上传文件到七牛错误
+[I 161125 21:05:33 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 242.16ms
+[I 161125 21:05:54 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:05:56 web:1946] 304 GET /profile.html (127.0.0.1) 20.80ms
+[I 161125 21:05:56 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.66ms
+[I 161125 21:05:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.61ms
+[I 161125 21:05:56 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 4.88ms
+[I 161125 21:05:56 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 3.57ms
+[I 161125 21:05:56 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 9.13ms
+[I 161125 21:05:56 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.78ms
+[I 161125 21:05:56 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.93ms
+[I 161125 21:05:56 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.72ms
+[I 161125 21:05:56 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.74ms
+[I 161125 21:05:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.64ms
+[I 161125 21:05:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.59ms
+[I 161125 21:05:56 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.53ms
+[D 161125 21:06:02 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:06:02 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:06:02 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:06:02 Profile:25] 上传文件到七牛错误
+[I 161125 21:06:02 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 215.53ms
+[I 161125 21:06:26 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:06:34 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:06:39 web:1946] 304 GET /profile.html (127.0.0.1) 19.54ms
+[I 161125 21:06:39 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.30ms
+[I 161125 21:06:39 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.69ms
+[I 161125 21:06:39 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.39ms
+[I 161125 21:06:39 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.48ms
+[I 161125 21:06:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.68ms
+[I 161125 21:06:39 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.41ms
+[I 161125 21:06:39 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.44ms
+[I 161125 21:06:39 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.70ms
+[I 161125 21:06:39 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.95ms
+[I 161125 21:06:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.58ms
+[I 161125 21:06:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.34ms
+[I 161125 21:06:39 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.74ms
+[D 161125 21:06:47 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:06:47 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:06:48 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:06:48 Profile:25] 上传文件到七牛错误
+[I 161125 21:06:48 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 298.82ms
+[I 161125 21:06:56 web:1946] 304 GET /profile.html (127.0.0.1) 2.98ms
+[I 161125 21:06:56 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.73ms
+[I 161125 21:06:56 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.89ms
+[I 161125 21:06:56 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.25ms
+[I 161125 21:06:56 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 9.72ms
+[I 161125 21:06:56 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.64ms
+[I 161125 21:06:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.74ms
+[I 161125 21:06:56 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 5.42ms
+[I 161125 21:06:56 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.86ms
+[I 161125 21:06:56 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.86ms
+[I 161125 21:06:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 47.56ms
+[I 161125 21:06:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.47ms
+[I 161125 21:06:56 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 2.61ms
+[I 161125 21:07:37 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[D 161125 21:07:47 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:07:47 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:07:47 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:07:47 Profile:25] 上传文件到七牛错误
+[I 161125 21:07:47 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 238.87ms
+[I 161125 21:07:54 web:1946] 304 GET /profile.html (127.0.0.1) 11.82ms
+[I 161125 21:07:54 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.62ms
+[I 161125 21:07:54 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.77ms
+[I 161125 21:07:54 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.66ms
+[I 161125 21:07:54 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.87ms
+[I 161125 21:07:54 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 5.21ms
+[I 161125 21:07:54 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.80ms
+[I 161125 21:07:54 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 6.25ms
+[I 161125 21:07:54 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.42ms
+[I 161125 21:07:54 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.71ms
+[I 161125 21:07:54 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.68ms
+[I 161125 21:07:54 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 3.35ms
+[I 161125 21:07:54 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.55ms
+[I 161125 21:08:29 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[D 161125 21:08:38 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:08:38 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:08:38 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:08:38 Profile:26] 上传文件到七牛错误
+[I 161125 21:08:38 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 388.49ms
+[I 161125 21:09:04 web:1946] 304 GET /profile.html (127.0.0.1) 9.86ms
+[I 161125 21:09:04 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.53ms
+[I 161125 21:09:04 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 4.50ms
+[I 161125 21:09:04 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.59ms
+[I 161125 21:09:04 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.77ms
+[I 161125 21:09:04 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 31.28ms
+[I 161125 21:09:04 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.78ms
+[I 161125 21:09:04 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.26ms
+[I 161125 21:09:04 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.54ms
+[I 161125 21:09:04 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 6.62ms
+[I 161125 21:09:04 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 5.31ms
+[I 161125 21:09:04 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.46ms
+[I 161125 21:09:04 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 2.14ms
+[I 161125 21:09:20 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:09:22 web:1946] 304 GET /profile.html (127.0.0.1) 12.06ms
+[I 161125 21:09:22 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.66ms
+[I 161125 21:09:22 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.61ms
+[I 161125 21:09:23 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.54ms
+[I 161125 21:09:23 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.71ms
+[I 161125 21:09:23 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.56ms
+[I 161125 21:09:23 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 2.95ms
+[I 161125 21:09:23 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 4.30ms
+[I 161125 21:09:23 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.61ms
+[I 161125 21:09:23 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.68ms
+[I 161125 21:09:23 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.73ms
+[I 161125 21:09:23 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.55ms
+[I 161125 21:09:23 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.62ms
+[D 161125 21:09:30 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:09:30 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:09:30 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:09:30 Profile:26] 上传文件到七牛错误
+[I 161125 21:09:30 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 246.62ms
+[I 161125 21:09:39 web:1946] 304 GET /profile.html (127.0.0.1) 2.38ms
+[I 161125 21:09:39 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.55ms
+[I 161125 21:09:39 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.34ms
+[I 161125 21:09:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.81ms
+[I 161125 21:09:39 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.46ms
+[I 161125 21:09:39 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.55ms
+[I 161125 21:09:39 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 6.95ms
+[I 161125 21:09:39 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.10ms
+[I 161125 21:09:39 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 2.04ms
+[I 161125 21:09:39 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.57ms
+[I 161125 21:09:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.56ms
+[I 161125 21:09:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.81ms
+[I 161125 21:09:39 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.56ms
+[D 161125 21:09:54 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:09:54 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:09:54 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:09:54 Profile:26] 上传文件到七牛错误
+[I 161125 21:09:54 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 791.69ms
+[I 161125 21:10:07 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:10:12 web:1946] 304 GET /profile.html (127.0.0.1) 12.63ms
+[I 161125 21:10:12 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.13ms
+[I 161125 21:10:12 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.86ms
+[I 161125 21:10:12 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.01ms
+[I 161125 21:10:12 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 3.94ms
+[I 161125 21:10:12 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.89ms
+[I 161125 21:10:12 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 6.67ms
+[I 161125 21:10:12 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.50ms
+[I 161125 21:10:12 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.95ms
+[I 161125 21:10:12 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.90ms
+[I 161125 21:10:12 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.23ms
+[I 161125 21:10:12 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.51ms
+[I 161125 21:10:12 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.96ms
+[D 161125 21:10:21 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:10:21 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:10:21 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:10:21 Profile:26] 上传文件到七牛错误
+[I 161125 21:10:21 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 244.13ms
+[I 161125 21:10:38 web:1946] 304 GET /profile.html (127.0.0.1) 11.74ms
+[I 161125 21:10:38 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.23ms
+[I 161125 21:10:38 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.26ms
+[I 161125 21:10:38 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.65ms
+[I 161125 21:10:38 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.55ms
+[I 161125 21:10:38 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.42ms
+[I 161125 21:10:38 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.38ms
+[I 161125 21:10:38 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 6.62ms
+[I 161125 21:10:38 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.57ms
+[I 161125 21:10:38 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.80ms
+[I 161125 21:10:38 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.79ms
+[I 161125 21:10:38 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.47ms
+[I 161125 21:10:38 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.48ms
+[I 161125 21:21:43 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:21:49 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:21:52 web:1946] 304 GET /profile.html (127.0.0.1) 14.02ms
+[I 161125 21:21:52 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 5.07ms
+[I 161125 21:21:52 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.67ms
+[I 161125 21:21:52 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.46ms
+[I 161125 21:21:52 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.60ms
+[I 161125 21:21:52 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.53ms
+[I 161125 21:21:52 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.49ms
+[I 161125 21:21:52 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 7.33ms
+[I 161125 21:21:52 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.38ms
+[I 161125 21:21:52 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.10ms
+[I 161125 21:21:52 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.57ms
+[I 161125 21:21:52 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.36ms
+[I 161125 21:21:52 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.40ms
+[D 161125 21:22:05 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:22:05 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:22:05 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:22:05 Profile:26] 上传文件到七牛错误
+[I 161125 21:22:05 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 323.11ms
+[I 161125 21:22:18 web:1946] 304 GET /profile.html (127.0.0.1) 23.66ms
+[I 161125 21:22:18 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.99ms
+[I 161125 21:22:18 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.48ms
+[I 161125 21:22:18 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 4.58ms
+[I 161125 21:22:18 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 4.13ms
+[I 161125 21:22:18 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.41ms
+[I 161125 21:22:18 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.42ms
+[I 161125 21:22:18 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.29ms
+[I 161125 21:22:18 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.55ms
+[I 161125 21:22:18 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.09ms
+[I 161125 21:22:18 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.77ms
+[I 161125 21:22:18 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 5.75ms
+[I 161125 21:22:18 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.80ms
+[D 161125 21:24:47 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:24:47 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:24:47 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:24:47 Profile:26] 上传文件到七牛错误
+[I 161125 21:24:47 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 1069.89ms
+[I 161125 21:24:57 web:1946] 304 GET /profile.html (127.0.0.1) 1.72ms
+[I 161125 21:24:57 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.68ms
+[I 161125 21:24:57 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 5.73ms
+[I 161125 21:24:57 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 8.96ms
+[I 161125 21:24:57 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.25ms
+[I 161125 21:24:57 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 7.42ms
+[I 161125 21:24:57 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.38ms
+[I 161125 21:24:57 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.59ms
+[I 161125 21:24:57 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.66ms
+[I 161125 21:24:57 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.88ms
+[I 161125 21:24:57 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 5.47ms
+[I 161125 21:24:57 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.56ms
+[I 161125 21:24:57 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.59ms
+[I 161125 21:25:32 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:42:52 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:42:56 web:1946] 304 GET /profile.html (127.0.0.1) 12.50ms
+[I 161125 21:42:56 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.87ms
+[I 161125 21:42:56 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.73ms
+[I 161125 21:42:56 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.55ms
+[I 161125 21:42:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.88ms
+[I 161125 21:42:56 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.98ms
+[I 161125 21:42:56 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.60ms
+[I 161125 21:42:56 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.21ms
+[I 161125 21:42:56 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.78ms
+[I 161125 21:42:56 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 5.65ms
+[I 161125 21:42:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.44ms
+[I 161125 21:42:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.99ms
+[I 161125 21:42:56 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 2.68ms
+[D 161125 21:43:09 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:43:09 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:43:10 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:43:10 Profile:25] 上传文件到七牛错误
+[I 161125 21:43:10 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 235.50ms
+[I 161125 21:44:24 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:44:25 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:44:43 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:44:46 web:1946] 304 GET /profile.html (127.0.0.1) 22.55ms
+[I 161125 21:44:46 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.13ms
+[I 161125 21:44:46 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.07ms
+[I 161125 21:44:46 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.45ms
+[I 161125 21:44:46 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.21ms
+[I 161125 21:44:46 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.99ms
+[I 161125 21:44:46 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.49ms
+[I 161125 21:44:46 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.92ms
+[I 161125 21:44:46 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 2.11ms
+[I 161125 21:44:46 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.65ms
+[I 161125 21:44:46 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.21ms
+[I 161125 21:44:46 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.55ms
+[I 161125 21:44:46 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 2.27ms
+[D 161125 21:44:57 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:44:57 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:44:57 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:44:57 Profile:26] 上传文件到七牛错误
+[I 161125 21:44:57 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 218.80ms
+[I 161125 21:45:26 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:45:36 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:45:39 web:1946] 304 GET /profile.html (127.0.0.1) 23.51ms
+[I 161125 21:45:39 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.08ms
+[I 161125 21:45:39 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 8.31ms
+[I 161125 21:45:39 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 28.93ms
+[I 161125 21:45:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.60ms
+[I 161125 21:45:39 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.81ms
+[I 161125 21:45:39 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.58ms
+[I 161125 21:45:39 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.12ms
+[I 161125 21:45:39 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.52ms
+[I 161125 21:45:39 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.56ms
+[I 161125 21:45:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.65ms
+[I 161125 21:45:39 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.37ms
+[I 161125 21:45:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 4.38ms
+[D 161125 21:45:47 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:45:47 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:45:47 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:45:47 Profile:25] 上传文件到七牛错误
+[I 161125 21:45:47 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 546.12ms
+[I 161125 21:46:47 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 21:46:53 web:1946] 304 GET /profile.html (127.0.0.1) 17.76ms
+[I 161125 21:46:53 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.46ms
+[I 161125 21:46:53 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.08ms
+[I 161125 21:46:53 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.58ms
+[I 161125 21:46:53 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.46ms
+[I 161125 21:46:53 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.43ms
+[I 161125 21:46:53 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.37ms
+[I 161125 21:46:53 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 8.61ms
+[I 161125 21:46:53 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.76ms
+[I 161125 21:46:53 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 7.63ms
+[I 161125 21:46:53 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.56ms
+[I 161125 21:46:53 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.89ms
+[I 161125 21:46:53 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.29ms
+[D 161125 21:46:59 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:46:59 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:46:59 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:46:59 Profile:25] 上传文件到七牛错误
+[I 161125 21:46:59 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 267.57ms
+[I 161125 21:47:21 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 21:47:23 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 21:47:27 web:1946] 304 GET /profile.html (127.0.0.1) 15.12ms
+[I 161125 21:47:27 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 5.71ms
+[I 161125 21:47:27 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.90ms
+[I 161125 21:47:27 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.38ms
+[I 161125 21:47:27 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.50ms
+[I 161125 21:47:27 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.71ms
+[I 161125 21:47:27 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.91ms
+[I 161125 21:47:27 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 8.17ms
+[I 161125 21:47:27 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 4.37ms
+[I 161125 21:47:27 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 5.55ms
+[I 161125 21:47:27 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.58ms
+[I 161125 21:47:27 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 4.16ms
+[I 161125 21:47:27 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.44ms
+[D 161125 21:47:34 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:47:34 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:47:35 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:47:35 Profile:25] 上传文件到七牛错误
+[I 161125 21:47:35 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 329.99ms
+[I 161125 21:47:45 web:1946] 304 GET /profile.html (127.0.0.1) 2.49ms
+[I 161125 21:47:45 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.09ms
+[I 161125 21:47:45 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.45ms
+[I 161125 21:47:45 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.58ms
+[I 161125 21:47:45 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.50ms
+[I 161125 21:47:45 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.66ms
+[I 161125 21:47:45 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 2.13ms
+[I 161125 21:47:45 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 16.33ms
+[I 161125 21:47:45 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 3.35ms
+[I 161125 21:47:45 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.94ms
+[I 161125 21:47:45 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.70ms
+[I 161125 21:47:45 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.44ms
+[I 161125 21:47:45 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.48ms
+[I 161125 21:48:34 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:49:02 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:49:13 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:49:30 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 21:49:36 web:1946] 304 GET /profile.html (127.0.0.1) 15.27ms
+[I 161125 21:49:36 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 2.04ms
+[I 161125 21:49:36 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 8.68ms
+[I 161125 21:49:36 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.07ms
+[I 161125 21:49:36 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.35ms
+[I 161125 21:49:36 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.55ms
+[I 161125 21:49:36 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.32ms
+[I 161125 21:49:36 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.08ms
+[I 161125 21:49:36 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.42ms
+[I 161125 21:49:36 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.61ms
+[I 161125 21:49:36 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.82ms
+[I 161125 21:49:36 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 3.50ms
+[I 161125 21:49:36 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.48ms
+[D 161125 21:49:53 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:49:53 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:49:53 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:49:54 Profile:26] 上传文件到七牛错误
+[I 161125 21:49:54 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 1357.95ms
+[I 161125 21:50:05 web:1946] 304 GET /profile.html (127.0.0.1) 4.02ms
+[I 161125 21:50:05 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.80ms
+[I 161125 21:50:05 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.11ms
+[I 161125 21:50:05 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.40ms
+[I 161125 21:50:05 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.62ms
+[I 161125 21:50:05 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.73ms
+[I 161125 21:50:05 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.37ms
+[I 161125 21:50:05 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.17ms
+[I 161125 21:50:05 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.77ms
+[I 161125 21:50:05 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.75ms
+[I 161125 21:50:05 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.61ms
+[I 161125 21:50:05 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.72ms
+[I 161125 21:50:05 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.34ms
+[I 161125 21:50:39 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:50:46 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:50:48 web:1946] 304 GET /profile.html (127.0.0.1) 30.20ms
+[I 161125 21:50:48 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.04ms
+[I 161125 21:50:48 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.21ms
+[I 161125 21:50:48 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 6.32ms
+[I 161125 21:50:48 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.60ms
+[I 161125 21:50:48 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.62ms
+[I 161125 21:50:48 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.08ms
+[I 161125 21:50:48 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 2.09ms
+[I 161125 21:50:48 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.43ms
+[I 161125 21:50:48 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.73ms
+[I 161125 21:50:48 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.88ms
+[I 161125 21:50:48 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.06ms
+[I 161125 21:50:48 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 2.68ms
+[D 161125 21:50:54 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:50:55 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:50:55 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:50:55 Profile:25] 上传文件到七牛错误
+[I 161125 21:50:55 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 565.92ms
+[I 161125 21:51:02 web:1946] 304 GET /profile.html (127.0.0.1) 2.53ms
+[I 161125 21:51:02 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.52ms
+[I 161125 21:51:02 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.99ms
+[I 161125 21:51:02 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.25ms
+[I 161125 21:51:02 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.60ms
+[I 161125 21:51:02 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.24ms
+[I 161125 21:51:02 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.58ms
+[I 161125 21:51:02 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.07ms
+[I 161125 21:51:02 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.58ms
+[I 161125 21:51:02 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.18ms
+[I 161125 21:51:02 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.43ms
+[I 161125 21:51:02 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 3.88ms
+[I 161125 21:51:02 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.59ms
+[I 161125 21:54:15 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:55:24 autoreload:204] /home/python/Desktop/Tornado_Project_03/config.py modified; restarting server
+[I 161125 21:57:15 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:57:30 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:57:37 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:57:39 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:58:00 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:58:07 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 21:58:09 web:1946] 304 GET /profile.html (127.0.0.1) 17.33ms
+[I 161125 21:58:10 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.78ms
+[I 161125 21:58:10 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.74ms
+[I 161125 21:58:10 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.05ms
+[I 161125 21:58:10 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.65ms
+[I 161125 21:58:10 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.58ms
+[I 161125 21:58:10 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 3.68ms
+[I 161125 21:58:10 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.75ms
+[I 161125 21:58:10 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.63ms
+[I 161125 21:58:10 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.14ms
+[I 161125 21:58:10 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.59ms
+[I 161125 21:58:10 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.99ms
+[I 161125 21:58:10 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.55ms
+[D 161125 21:58:16 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 21:58:16 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 21:58:16 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 21:58:16 Profile:26] 上传文件到七牛错误
+[I 161125 21:58:16 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 233.51ms
+[I 161125 21:58:48 web:1946] 304 GET /profile.html (127.0.0.1) 2.51ms
+[I 161125 21:58:48 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.99ms
+[I 161125 21:58:48 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 5.51ms
+[I 161125 21:58:48 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.74ms
+[I 161125 21:58:48 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.45ms
+[I 161125 21:58:48 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.50ms
+[I 161125 21:58:49 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 10.20ms
+[I 161125 21:58:49 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 6.35ms
+[I 161125 21:58:49 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 5.29ms
+[I 161125 21:58:49 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 2.65ms
+[I 161125 21:58:49 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 9.39ms
+[I 161125 21:58:49 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.73ms
+[I 161125 21:58:49 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 4.71ms
+[I 161125 22:00:08 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 22:00:14 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 22:00:17 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 22:00:20 web:1946] 304 GET /profile.html (127.0.0.1) 9.96ms
+[I 161125 22:00:20 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.46ms
+[I 161125 22:00:20 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.74ms
+[I 161125 22:00:20 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.96ms
+[I 161125 22:00:20 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.81ms
+[I 161125 22:00:20 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.74ms
+[I 161125 22:00:20 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.41ms
+[I 161125 22:00:20 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.18ms
+[I 161125 22:00:20 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.82ms
+[I 161125 22:00:20 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.46ms
+[I 161125 22:00:20 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.17ms
+[I 161125 22:00:20 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.58ms
+[I 161125 22:00:20 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.50ms
+[D 161125 22:00:26 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:00:26 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:00:26 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:00:26 Profile:26] 上传文件到七牛错误
+[I 161125 22:00:26 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 235.59ms
+[I 161125 22:00:39 web:1946] 304 GET /profile.html (127.0.0.1) 4.17ms
+[I 161125 22:00:39 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.85ms
+[I 161125 22:00:39 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 4.88ms
+[I 161125 22:00:39 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 4.50ms
+[I 161125 22:00:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 4.76ms
+[I 161125 22:00:39 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.25ms
+[I 161125 22:00:39 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.65ms
+[I 161125 22:00:39 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.79ms
+[I 161125 22:00:39 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.51ms
+[I 161125 22:00:39 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.55ms
+[I 161125 22:00:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.09ms
+[I 161125 22:00:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.39ms
+[I 161125 22:00:39 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.42ms
+[D 161125 22:00:52 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:00:52 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:00:52 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:00:52 Profile:26] 上传文件到七牛错误
+[I 161125 22:00:52 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 534.83ms
+[I 161125 22:01:22 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 22:01:39 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 22:08:11 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:08:18 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:08:52 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:08:54 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:08:56 web:1946] 304 GET /profile.html (127.0.0.1) 15.26ms
+[I 161125 22:08:56 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.54ms
+[I 161125 22:08:56 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.36ms
+[I 161125 22:08:56 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.85ms
+[I 161125 22:08:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.50ms
+[I 161125 22:08:56 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.44ms
+[I 161125 22:08:56 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.97ms
+[I 161125 22:08:56 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.52ms
+[I 161125 22:08:56 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.44ms
+[I 161125 22:08:56 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.85ms
+[I 161125 22:08:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.99ms
+[I 161125 22:08:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.54ms
+[I 161125 22:08:57 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.58ms
+[D 161125 22:09:06 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:09:06 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:09:06 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:09:06 Profile:24] 上传文件到七牛错误
+[I 161125 22:09:06 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 256.97ms
+[I 161125 22:10:35 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:10:37 web:1946] 304 GET /profile.html (127.0.0.1) 14.10ms
+[I 161125 22:10:37 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.68ms
+[I 161125 22:10:37 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.03ms
+[I 161125 22:10:37 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.95ms
+[I 161125 22:10:37 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.43ms
+[I 161125 22:10:37 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.00ms
+[I 161125 22:10:37 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 5.95ms
+[I 161125 22:10:37 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.14ms
+[I 161125 22:10:37 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 7.21ms
+[I 161125 22:10:37 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 6.73ms
+[I 161125 22:10:37 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.20ms
+[I 161125 22:10:37 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.66ms
+[I 161125 22:10:37 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 9.07ms
+[D 161125 22:10:50 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:10:50 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:10:50 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:10:50 Profile:24] 上传文件到七牛错误
+[I 161125 22:10:50 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 573.62ms
+[I 161125 22:11:22 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:11:24 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:11:31 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:11:35 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:11:38 web:1946] 304 GET /profile.html (127.0.0.1) 18.59ms
+[I 161125 22:11:38 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 8.55ms
+[I 161125 22:11:38 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.99ms
+[I 161125 22:11:38 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.47ms
+[I 161125 22:11:38 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.72ms
+[I 161125 22:11:38 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.84ms
+[I 161125 22:11:38 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.96ms
+[I 161125 22:11:38 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.48ms
+[I 161125 22:11:38 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.40ms
+[I 161125 22:11:38 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.37ms
+[I 161125 22:11:38 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 3.47ms
+[I 161125 22:11:38 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.36ms
+[I 161125 22:11:38 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.58ms
+[D 161125 22:11:44 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:11:44 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:11:44 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:11:44 Profile:24] 上传文件到七牛错误
+[I 161125 22:11:44 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 254.12ms
+[I 161125 22:18:20 autoreload:204] /home/python/Desktop/Tornado_Project_03/config.py modified; restarting server
+[I 161125 22:18:22 autoreload:204] /home/python/Desktop/Tornado_Project_03/config.py modified; restarting server
+[I 161125 22:18:25 web:1946] 304 GET /profile.html (127.0.0.1) 13.62ms
+[I 161125 22:18:25 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.79ms
+[I 161125 22:18:25 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.11ms
+[I 161125 22:18:25 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.68ms
+[I 161125 22:18:25 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 5.14ms
+[I 161125 22:18:25 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.62ms
+[I 161125 22:18:25 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 2.91ms
+[I 161125 22:18:25 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 6.52ms
+[I 161125 22:18:25 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 5.13ms
+[I 161125 22:18:25 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.60ms
+[I 161125 22:18:25 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 6.12ms
+[I 161125 22:18:25 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 4.37ms
+[I 161125 22:18:25 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 3.11ms
+[D 161125 22:18:32 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:18:32 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:18:32 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:18:32 Profile:24] 上传文件到七牛错误
+[I 161125 22:18:32 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 227.06ms
+[I 161125 22:20:01 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:20:08 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:20:10 web:1946] 304 GET /profile.html (127.0.0.1) 30.10ms
+[I 161125 22:20:10 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.47ms
+[I 161125 22:20:10 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.77ms
+[I 161125 22:20:10 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.83ms
+[I 161125 22:20:10 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 6.80ms
+[I 161125 22:20:10 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.68ms
+[I 161125 22:20:10 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 7.49ms
+[I 161125 22:20:10 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.83ms
+[I 161125 22:20:10 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.75ms
+[I 161125 22:20:10 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.42ms
+[I 161125 22:20:10 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.16ms
+[I 161125 22:20:10 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 4.13ms
+[I 161125 22:20:10 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.31ms
+[D 161125 22:20:17 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:20:17 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:20:17 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:20:17 Profile:24] 上传文件到七牛错误
+[I 161125 22:20:17 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 202.45ms
+[I 161125 22:20:32 web:1946] 304 GET /profile.html (127.0.0.1) 2.67ms
+[I 161125 22:20:32 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.30ms
+[I 161125 22:20:32 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.70ms
+[I 161125 22:20:32 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.56ms
+[I 161125 22:20:32 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.58ms
+[I 161125 22:20:32 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.37ms
+[I 161125 22:20:32 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.78ms
+[I 161125 22:20:32 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.83ms
+[I 161125 22:20:32 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 12.01ms
+[I 161125 22:20:32 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.75ms
+[I 161125 22:20:32 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.00ms
+[I 161125 22:20:32 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.87ms
+[I 161125 22:20:32 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.93ms
+[D 161125 22:20:42 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:20:42 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:20:42 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:20:42 Profile:24] 上传文件到七牛错误
+[I 161125 22:20:42 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 202.90ms
+[I 161125 22:24:31 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:24:41 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:24:44 web:1946] 304 GET /profile.html (127.0.0.1) 20.14ms
+[I 161125 22:24:44 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 7.20ms
+[I 161125 22:24:44 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.61ms
+[I 161125 22:24:44 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.71ms
+[I 161125 22:24:44 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.67ms
+[I 161125 22:24:44 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.97ms
+[I 161125 22:24:44 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.45ms
+[I 161125 22:24:44 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.27ms
+[I 161125 22:24:44 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.70ms
+[I 161125 22:24:44 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.37ms
+[I 161125 22:24:44 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.63ms
+[I 161125 22:24:44 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.85ms
+[I 161125 22:24:44 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 3.08ms
+[D 161125 22:24:52 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:24:52 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:24:52 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:24:52 Profile:24] 上传文件到七牛错误
+[I 161125 22:24:52 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 395.30ms
+[I 161125 22:26:34 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 22:26:47 web:1946] 304 GET /profile.html (127.0.0.1) 18.54ms
+[I 161125 22:26:47 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.18ms
+[I 161125 22:26:47 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.61ms
+[I 161125 22:26:47 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.38ms
+[I 161125 22:26:47 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.78ms
+[I 161125 22:26:47 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.43ms
+[I 161125 22:26:47 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.64ms
+[I 161125 22:26:48 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.00ms
+[I 161125 22:26:48 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.47ms
+[I 161125 22:26:48 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.46ms
+[I 161125 22:26:48 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.86ms
+[I 161125 22:26:48 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.49ms
+[I 161125 22:26:48 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.71ms
+[D 161125 22:26:53 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:26:53 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:26:53 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:26:53 Profile:23] 上传文件到七牛错误
+[I 161125 22:26:53 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 186.65ms
+[I 161125 22:27:36 autoreload:204] /home/python/Desktop/Tornado_Project_03/config.py modified; restarting server
+[I 161125 22:27:39 web:1946] 304 GET /profile.html (127.0.0.1) 13.22ms
+[I 161125 22:27:39 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 5.39ms
+[I 161125 22:27:39 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.37ms
+[I 161125 22:27:39 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 11.99ms
+[I 161125 22:27:39 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.82ms
+[I 161125 22:27:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.60ms
+[I 161125 22:27:39 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.40ms
+[I 161125 22:27:39 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 2.83ms
+[I 161125 22:27:39 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 2.53ms
+[I 161125 22:27:39 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.72ms
+[I 161125 22:27:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.16ms
+[I 161125 22:27:39 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.09ms
+[I 161125 22:27:39 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.65ms
+[D 161125 22:27:45 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:27:45 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:27:45 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:27:45 Profile:23] 上传文件到七牛错误
+[I 161125 22:27:45 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 201.19ms
+[I 161125 22:34:16 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:34:20 web:1946] 304 GET /profile.html (127.0.0.1) 629.73ms
+[I 161125 22:34:20 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.90ms
+[I 161125 22:34:20 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.45ms
+[I 161125 22:34:20 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.23ms
+[I 161125 22:34:20 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.65ms
+[I 161125 22:34:20 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 7.44ms
+[I 161125 22:34:20 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.44ms
+[I 161125 22:34:20 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.82ms
+[I 161125 22:34:20 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.63ms
+[I 161125 22:34:20 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 2.03ms
+[I 161125 22:34:20 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.57ms
+[I 161125 22:34:20 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.91ms
+[I 161125 22:34:20 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.02ms
+[D 161125 22:34:27 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:34:27 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:34:28 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:34:28 Profile:23] 上传文件到七牛错误
+[I 161125 22:34:28 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 231.57ms
+[I 161125 22:34:45 web:1946] 304 GET /profile.html (127.0.0.1) 2.43ms
+[I 161125 22:34:45 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.75ms
+[I 161125 22:34:45 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.83ms
+[I 161125 22:34:45 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.51ms
+[I 161125 22:34:45 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.54ms
+[I 161125 22:34:45 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.44ms
+[I 161125 22:34:45 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.59ms
+[I 161125 22:34:45 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.70ms
+[I 161125 22:34:45 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 2.61ms
+[I 161125 22:34:45 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.75ms
+[I 161125 22:34:45 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.72ms
+[I 161125 22:34:45 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.77ms
+[I 161125 22:34:45 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.46ms
+[D 161125 22:34:54 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:34:54 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:34:54 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:34:54 Profile:23] 上传文件到七牛错误
+[I 161125 22:34:54 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 226.14ms
+[I 161125 22:38:00 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:38:12 web:1946] 304 GET /profile.html (127.0.0.1) 34.94ms
+[I 161125 22:38:16 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 104.18ms
+[I 161125 22:38:16 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 5.27ms
+[I 161125 22:38:16 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 45.86ms
+[I 161125 22:38:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.01ms
+[I 161125 22:38:16 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.14ms
+[I 161125 22:38:16 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 2.55ms
+[I 161125 22:38:16 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.22ms
+[I 161125 22:38:16 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.56ms
+[I 161125 22:38:16 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 3.72ms
+[I 161125 22:38:16 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 3.27ms
+[I 161125 22:38:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.49ms
+[I 161125 22:38:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 15.32ms
+[D 161125 22:38:29 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:38:29 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:38:29 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:38:29 Profile:23] 上传文件到七牛错误
+[I 161125 22:38:29 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 296.90ms
+[I 161125 22:40:20 web:1946] 304 GET /profile.html (127.0.0.1) 18.96ms
+[I 161125 22:40:21 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 4.64ms
+[I 161125 22:40:21 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.61ms
+[I 161125 22:40:21 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.76ms
+[I 161125 22:40:21 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.60ms
+[I 161125 22:40:21 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.46ms
+[I 161125 22:40:21 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 5.11ms
+[I 161125 22:40:21 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.01ms
+[I 161125 22:40:21 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 5.59ms
+[I 161125 22:40:21 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 5.20ms
+[I 161125 22:40:21 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.67ms
+[I 161125 22:40:21 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.36ms
+[I 161125 22:40:21 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.30ms
+[I 161125 22:40:43 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:40:53 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:42:03 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:42:52 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:47:32 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 22:47:37 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 22:47:43 web:1946] 304 GET /profile.html (127.0.0.1) 10.75ms
+[I 161125 22:47:43 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.37ms
+[I 161125 22:47:43 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.99ms
+[I 161125 22:47:43 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.39ms
+[I 161125 22:47:43 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.00ms
+[I 161125 22:47:43 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.39ms
+[I 161125 22:47:43 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.81ms
+[I 161125 22:47:43 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.51ms
+[I 161125 22:47:43 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.95ms
+[I 161125 22:47:43 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.14ms
+[I 161125 22:47:43 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.64ms
+[I 161125 22:47:43 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 3.09ms
+[I 161125 22:47:43 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 2.76ms
+[E 161125 22:47:49 Profile:19] global name 'encode' is not defined
+[I 161125 22:47:49 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 5.26ms
+[I 161125 22:48:12 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 22:48:16 web:1946] 304 GET /profile.html (127.0.0.1) 16.70ms
+[I 161125 22:48:16 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.52ms
+[I 161125 22:48:16 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 5.28ms
+[I 161125 22:48:16 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.17ms
+[I 161125 22:48:16 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.67ms
+[I 161125 22:48:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 6.17ms
+[I 161125 22:48:16 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 6.72ms
+[I 161125 22:48:16 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.93ms
+[I 161125 22:48:16 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.44ms
+[I 161125 22:48:16 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.99ms
+[I 161125 22:48:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.58ms
+[I 161125 22:48:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.75ms
+[I 161125 22:48:16 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.65ms
+[D 161125 22:48:28 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:48:28 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:48:28 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:48:28 Profile:24] 上传文件到七牛错误
+[I 161125 22:48:28 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 224.06ms
+[I 161125 22:49:44 web:1946] 304 GET /profile.html (127.0.0.1) 3.01ms
+[I 161125 22:49:44 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.86ms
+[I 161125 22:49:44 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.99ms
+[I 161125 22:49:44 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 6.56ms
+[I 161125 22:49:44 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 4.62ms
+[I 161125 22:49:44 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 3.47ms
+[I 161125 22:49:44 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 7.40ms
+[I 161125 22:49:44 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.80ms
+[I 161125 22:49:44 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.86ms
+[I 161125 22:49:44 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.30ms
+[I 161125 22:49:44 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.81ms
+[I 161125 22:49:44 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.53ms
+[I 161125 22:49:44 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.92ms
+[I 161125 22:50:09 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 22:51:10 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 1034.30ms
+[I 161125 22:51:37 web:1946] 304 GET /api/check_login (127.0.0.1) 7.32ms
+[D 161125 22:53:41 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 22:53:41 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 22:53:42 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 22:53:43 Profile:24] 上传文件到七牛错误
+[I 161125 22:53:43 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 1207.71ms
+[I 161125 23:16:34 web:1946] 304 GET / (127.0.0.1) 86.55ms
+[I 161125 23:16:35 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 44.40ms
+[I 161125 23:16:35 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 14.49ms
+[I 161125 23:16:35 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 22.06ms
+[I 161125 23:16:35 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 17.93ms
+[I 161125 23:16:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 3.50ms
+[I 161125 23:16:35 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 15.88ms
+[I 161125 23:16:35 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 2.91ms
+[I 161125 23:16:35 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 31.79ms
+[I 161125 23:16:35 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 26.88ms
+[I 161125 23:16:35 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 5.09ms
+[I 161125 23:16:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 15.14ms
+[I 161125 23:16:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 8.32ms
+[I 161125 23:16:35 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 1.87ms
+[I 161125 23:16:35 web:1946] 304 GET /static/js/template.js (127.0.0.1) 11.29ms
+[I 161125 23:16:35 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 63.72ms
+[I 161125 23:16:35 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 150.11ms
+[I 161125 23:16:35 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 133.74ms
+[I 161125 23:16:35 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 27.78ms
+[I 161125 23:16:35 web:1946] 304 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 37.71ms
+[E 161125 23:16:36 session:23] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 23:16:36 web:1524] Uncaught exception GET /api/check_login (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/', 'Cache-Control': 'max-age=0', 'If-None-Match': '"135840801ed33fefbc5099a23e26152ae5258ad3"', 'Cookie': 'session_id="2|1:0|10:1480068947|10:session_id|44:ZWJiYzg1ODVhMzc4NGM3NzljY2MyMTUzYWE4NzQwNDI=|bf1d4bfb83fcecc12ebe9aa36cee1f279b70b43c76b99f35fc6ab8c00e418e3a"; _xsrf=2|d9c95f57|d10cf191e27c31e27548a36160ce738a|1480075440'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/Tornado_Project_03/handlers/Passport.py", line 67, in get
+        if self.get_current_user():
+      File "/home/python/Desktop/Tornado_Project_03/handlers/BaseHandler.py", line 31, in get_current_user
+        self.session = Session(self)
+      File "/home/python/Desktop/Tornado_Project_03/utils/session.py", line 25, in __init__
+        if not data:
+    UnboundLocalError: local variable 'data' referenced before assignment
+[E 161125 23:16:36 web:1946] 500 GET /api/check_login (127.0.0.1) 48.36ms
+[W 161125 23:16:37 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 40.91ms
+[I 161125 23:16:46 web:1946] 304 GET / (127.0.0.1) 2.83ms
+[I 161125 23:16:46 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.63ms
+[I 161125 23:16:46 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.35ms
+[I 161125 23:16:46 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 6.76ms
+[I 161125 23:16:46 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.33ms
+[I 161125 23:16:46 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.50ms
+[I 161125 23:16:46 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.60ms
+[I 161125 23:16:46 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.50ms
+[I 161125 23:16:46 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.37ms
+[I 161125 23:16:46 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.52ms
+[I 161125 23:16:46 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 2.10ms
+[I 161125 23:16:46 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.97ms
+[I 161125 23:16:46 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.86ms
+[I 161125 23:16:46 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 14.41ms
+[I 161125 23:16:46 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.38ms
+[I 161125 23:16:46 web:1946] 304 GET /static/js/template.js (127.0.0.1) 2.64ms
+[I 161125 23:16:46 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 4.45ms
+[I 161125 23:16:46 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 5.62ms
+[I 161125 23:16:46 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 5.35ms
+[W 161125 23:16:47 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.68ms
+[E 161125 23:16:47 session:23] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 23:16:47 web:1524] Uncaught exception GET /api/check_login (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Cache-Control': 'max-age=0', 'Referer': 'http://127.0.0.1:8000/', 'Cookie': 'session_id="2|1:0|10:1480068947|10:session_id|44:ZWJiYzg1ODVhMzc4NGM3NzljY2MyMTUzYWE4NzQwNDI=|bf1d4bfb83fcecc12ebe9aa36cee1f279b70b43c76b99f35fc6ab8c00e418e3a"; _xsrf=2|d9c95f57|d10cf191e27c31e27548a36160ce738a|1480075440'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/Tornado_Project_03/handlers/Passport.py", line 67, in get
+        if self.get_current_user():
+      File "/home/python/Desktop/Tornado_Project_03/handlers/BaseHandler.py", line 31, in get_current_user
+        self.session = Session(self)
+      File "/home/python/Desktop/Tornado_Project_03/utils/session.py", line 25, in __init__
+        if not data:
+    UnboundLocalError: local variable 'data' referenced before assignment
+[E 161125 23:16:47 web:1946] 500 GET /api/check_login (127.0.0.1) 7.64ms
+[I 161125 23:18:19 web:1946] 304 GET /static/js/ihome/login.js (127.0.0.1) 34.04ms
+[I 161125 23:18:33 web:1946] 200 POST /api/login (127.0.0.1) 925.64ms
+[E 161125 23:18:39 session:23] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 23:18:39 Passport:58] local variable 'data' referenced before assignment
+[I 161125 23:18:39 web:1946] 200 POST /api/login (127.0.0.1) 33.39ms
+[E 161125 23:18:40 session:23] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 23:18:40 web:1524] Uncaught exception GET /api/check_login (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8000/', 'Cookie': 'session_id="2|1:0|10:1480068947|10:session_id|44:ZWJiYzg1ODVhMzc4NGM3NzljY2MyMTUzYWE4NzQwNDI=|bf1d4bfb83fcecc12ebe9aa36cee1f279b70b43c76b99f35fc6ab8c00e418e3a"; _xsrf=2|d9c95f57|d10cf191e27c31e27548a36160ce738a|1480075440'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/Tornado_Project_03/handlers/Passport.py", line 67, in get
+        if self.get_current_user():
+      File "/home/python/Desktop/Tornado_Project_03/handlers/BaseHandler.py", line 31, in get_current_user
+        self.session = Session(self)
+      File "/home/python/Desktop/Tornado_Project_03/utils/session.py", line 25, in __init__
+        if not data:
+    UnboundLocalError: local variable 'data' referenced before assignment
+[E 161125 23:18:40 web:1946] 500 GET /api/check_login (127.0.0.1) 20.33ms
+[W 161125 23:18:41 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.06ms
+[I 161125 23:18:43 web:1946] 200 GET /detail.html?id=2 (127.0.0.1) 26.84ms
+[I 161125 23:18:44 web:1946] 200 GET /static/css/ihome/detail.css (127.0.0.1) 14.91ms
+[I 161125 23:18:44 web:1946] 200 GET /static/js/ihome/detail.js (127.0.0.1) 19.06ms
+[I 161125 23:18:44 web:1946] 304 GET /static/images/landlord01.jpg (127.0.0.1) 23.14ms
+[I 161125 23:18:44 web:1946] 200 GET /static/images/houseicon_sprite.png (127.0.0.1) 15.29ms
+[W 161125 23:18:46 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 5.02ms
+[W 161125 23:18:50 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.83ms
+[I 161125 23:22:46 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/session.py modified; restarting server
+[I 161125 23:22:55 web:1946] 304 GET / (127.0.0.1) 15.96ms
+[I 161125 23:22:55 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.73ms
+[I 161125 23:22:55 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.14ms
+[I 161125 23:22:55 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.39ms
+[I 161125 23:22:55 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 1.58ms
+[I 161125 23:22:55 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.66ms
+[I 161125 23:22:55 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.09ms
+[I 161125 23:22:55 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.53ms
+[I 161125 23:22:55 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 4.28ms
+[I 161125 23:22:55 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 5.34ms
+[I 161125 23:22:55 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 1.91ms
+[I 161125 23:22:55 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.84ms
+[I 161125 23:22:55 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.47ms
+[I 161125 23:22:55 web:1946] 304 GET /static/js/template.js (127.0.0.1) 1.59ms
+[I 161125 23:22:55 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 2.05ms
+[I 161125 23:22:55 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.99ms
+[I 161125 23:22:55 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 4.66ms
+[I 161125 23:22:56 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 4.59ms
+[I 161125 23:22:56 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 10.15ms
+[W 161125 23:22:56 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.02ms
+[E 161125 23:22:56 session:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 23:22:56 web:1524] Uncaught exception GET /api/check_login (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Cache-Control': 'max-age=0', 'Referer': 'http://127.0.0.1:8000/', 'Cookie': 'session_id="2|1:0|10:1480068947|10:session_id|44:ZWJiYzg1ODVhMzc4NGM3NzljY2MyMTUzYWE4NzQwNDI=|bf1d4bfb83fcecc12ebe9aa36cee1f279b70b43c76b99f35fc6ab8c00e418e3a"; _xsrf=2|d9c95f57|d10cf191e27c31e27548a36160ce738a|1480075440'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/Tornado_Project_03/handlers/Passport.py", line 67, in get
+        if self.get_current_user():
+      File "/home/python/Desktop/Tornado_Project_03/handlers/BaseHandler.py", line 31, in get_current_user
+        self.session = Session(self)
+      File "/home/python/Desktop/Tornado_Project_03/utils/session.py", line 26, in __init__
+        if not data:
+    UnboundLocalError: local variable 'data' referenced before assignment
+[E 161125 23:22:56 web:1946] 500 GET /api/check_login (127.0.0.1) 25.38ms
+[I 161125 23:23:28 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/session.py modified; restarting server
+[I 161125 23:23:30 web:1946] 304 GET / (127.0.0.1) 11.47ms
+[I 161125 23:23:30 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.28ms
+[I 161125 23:23:30 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.61ms
+[I 161125 23:23:30 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.47ms
+[I 161125 23:23:30 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 1.57ms
+[I 161125 23:23:30 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.81ms
+[I 161125 23:23:30 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.59ms
+[I 161125 23:23:30 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 2.20ms
+[I 161125 23:23:30 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.06ms
+[I 161125 23:23:30 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.95ms
+[I 161125 23:23:30 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 2.08ms
+[I 161125 23:23:30 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.62ms
+[I 161125 23:23:30 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.71ms
+[I 161125 23:23:30 web:1946] 304 GET /static/js/template.js (127.0.0.1) 1.50ms
+[I 161125 23:23:30 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 1.39ms
+[I 161125 23:23:30 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.44ms
+[I 161125 23:23:30 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 4.01ms
+[I 161125 23:23:30 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 4.24ms
+[I 161125 23:23:30 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 7.81ms
+[W 161125 23:23:31 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 9.54ms
+[E 161125 23:23:31 session:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161125 23:23:31 web:1524] Uncaught exception GET /api/check_login (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Cache-Control': 'max-age=0', 'Referer': 'http://127.0.0.1:8000/', 'Cookie': 'session_id="2|1:0|10:1480068947|10:session_id|44:ZWJiYzg1ODVhMzc4NGM3NzljY2MyMTUzYWE4NzQwNDI=|bf1d4bfb83fcecc12ebe9aa36cee1f279b70b43c76b99f35fc6ab8c00e418e3a"; _xsrf=2|d9c95f57|d10cf191e27c31e27548a36160ce738a|1480075440'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/Tornado_Project_03/handlers/Passport.py", line 67, in get
+        if self.get_current_user():
+      File "/home/python/Desktop/Tornado_Project_03/handlers/BaseHandler.py", line 31, in get_current_user
+        self.session = Session(self)
+      File "/home/python/Desktop/Tornado_Project_03/utils/session.py", line 26, in __init__
+        if not data:
+    UnboundLocalError: local variable 'data' referenced before assignment
+[E 161125 23:23:31 web:1946] 500 GET /api/check_login (127.0.0.1) 7.75ms
+[I 161125 23:25:20 web:1946] 304 GET / (127.0.0.1) 13.09ms
+[I 161125 23:25:20 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 4.72ms
+[I 161125 23:25:20 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.98ms
+[I 161125 23:25:20 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.49ms
+[I 161125 23:25:20 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 1.71ms
+[I 161125 23:25:20 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.56ms
+[I 161125 23:25:20 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.45ms
+[I 161125 23:25:20 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.42ms
+[I 161125 23:25:20 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 2.02ms
+[I 161125 23:25:20 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 6.00ms
+[I 161125 23:25:20 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 4.05ms
+[I 161125 23:25:20 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 4.00ms
+[I 161125 23:25:20 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.07ms
+[I 161125 23:25:20 web:1946] 304 GET /static/js/template.js (127.0.0.1) 1.59ms
+[I 161125 23:25:20 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 1.78ms
+[I 161125 23:25:20 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.86ms
+[I 161125 23:25:20 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 3.62ms
+[I 161125 23:25:20 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 5.75ms
+[I 161125 23:25:20 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 4.03ms
+[W 161125 23:25:21 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 5.10ms
+[I 161125 23:25:21 web:1946] 200 GET /api/check_login (127.0.0.1) 8.45ms
+[D 161125 23:25:39 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 23:25:39 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 23:25:39 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 23:25:40 Profile:24] 上传文件到七牛错误
+[I 161125 23:25:40 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 1033.00ms
+[I 161125 23:25:54 web:1946] 304 GET /profile.html (127.0.0.1) 27.08ms
+[I 161125 23:25:54 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 4.70ms
+[I 161125 23:25:55 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.65ms
+[I 161125 23:25:55 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.39ms
+[I 161125 23:25:55 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.65ms
+[I 161125 23:25:55 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.48ms
+[I 161125 23:25:55 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 7.34ms
+[I 161125 23:25:55 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 9.66ms
+[I 161125 23:25:55 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.93ms
+[I 161125 23:25:55 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.94ms
+[I 161125 23:25:55 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.53ms
+[I 161125 23:25:55 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.42ms
+[I 161125 23:25:55 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 9.23ms
+[D 161125 23:26:10 connectionpool:395] "POST / HTTP/1.1" 400 56
+[E 161125 23:26:10 Profile:24] 上传文件到七牛错误
+[I 161125 23:26:10 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 58.78ms
+[I 161125 23:26:54 web:1946] 304 GET /profile.html (127.0.0.1) 3.65ms
+[I 161125 23:26:54 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.18ms
+[I 161125 23:26:54 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.86ms
+[I 161125 23:26:55 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.01ms
+[I 161125 23:26:55 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.91ms
+[I 161125 23:26:55 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.67ms
+[I 161125 23:26:55 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.46ms
+[I 161125 23:26:55 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.93ms
+[I 161125 23:26:55 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 3.77ms
+[I 161125 23:26:55 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.71ms
+[I 161125 23:26:55 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.65ms
+[I 161125 23:26:55 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 3.54ms
+[I 161125 23:26:55 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.37ms
+[I 161125 23:33:09 autoreload:204] /home/python/Desktop/Tornado_Project_03/config.py modified; restarting server
+[I 161125 23:33:24 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 23:34:48 autoreload:204] /home/python/Desktop/Tornado_Project_03/utils/image_storage.py modified; restarting server
+[I 161125 23:35:01 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 23:35:16 web:1946] 304 GET /profile.html (127.0.0.1) 14.18ms
+[I 161125 23:35:16 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.52ms
+[I 161125 23:35:16 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.68ms
+[I 161125 23:35:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.67ms
+[I 161125 23:35:16 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.45ms
+[I 161125 23:35:16 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 6.77ms
+[I 161125 23:35:16 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.60ms
+[I 161125 23:35:16 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.29ms
+[I 161125 23:35:16 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.76ms
+[I 161125 23:35:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.79ms
+[I 161125 23:35:16 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.49ms
+[I 161125 23:35:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.32ms
+[I 161125 23:35:16 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.31ms
+[I 161125 23:35:35 web:1946] 304 GET /my.html (127.0.0.1) 26.67ms
+[I 161125 23:35:35 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.41ms
+[I 161125 23:35:35 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.48ms
+[I 161125 23:35:35 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.83ms
+[I 161125 23:35:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 5.24ms
+[I 161125 23:35:35 web:1946] 304 GET /static/css/ihome/my.css (127.0.0.1) 12.69ms
+[I 161125 23:35:35 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.82ms
+[I 161125 23:35:35 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.33ms
+[I 161125 23:35:35 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.03ms
+[I 161125 23:35:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.61ms
+[I 161125 23:35:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 9.59ms
+[I 161125 23:35:35 web:1946] 304 GET /static/js/ihome/my.js (127.0.0.1) 7.21ms
+[D 161125 23:35:50 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 23:35:50 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 23:35:50 connectionpool:395] "POST / HTTP/1.1" 200 76
+[E 161125 23:35:50 web:1524] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '5299', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Xsrftoken': '2|d9c95f57|d10cf191e27c31e27548a36160ce738a|1480075440', 'Host': '127.0.0.1:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': 'session_id="2|1:0|10:1480068947|10:session_id|44:ZWJiYzg1ODVhMzc4NGM3NzljY2MyMTUzYWE4NzQwNDI=|bf1d4bfb83fcecc12ebe9aa36cee1f279b70b43c76b99f35fc6ab8c00e418e3a"; _xsrf=2|d9c95f57|d10cf191e27c31e27548a36160ce738a|1480075440', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryr0A8Civz3JCImAWL'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/Tornado_Project_03/utils/common.py", line 12, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "/home/python/Desktop/Tornado_Project_03/handlers/Profile.py", line 32, in post
+        img_url = image_url_prefix + img_name
+    NameError: global name 'image_url_prefix' is not defined
+[E 161125 23:35:50 web:1946] 500 POST /api/profile/avatar (127.0.0.1) 800.36ms
+[I 161125 23:36:43 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161125 23:37:01 autoreload:204] /home/python/Desktop/Tornado_Project_03/config.py modified; restarting server
+[I 161125 23:37:07 web:1946] 304 GET /profile.html (127.0.0.1) 17.12ms
+[I 161125 23:37:07 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.76ms
+[I 161125 23:37:07 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.09ms
+[I 161125 23:37:07 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 5.04ms
+[I 161125 23:37:07 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 3.15ms
+[I 161125 23:37:07 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 5.01ms
+[I 161125 23:37:07 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.75ms
+[I 161125 23:37:07 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.62ms
+[I 161125 23:37:07 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.44ms
+[I 161125 23:37:07 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.91ms
+[I 161125 23:37:07 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.64ms
+[I 161125 23:37:07 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 5.33ms
+[I 161125 23:37:07 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.05ms
+[D 161125 23:37:15 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 23:37:15 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 23:37:16 connectionpool:395] "POST / HTTP/1.1" 200 76
+[I 161125 23:37:16 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 297.10ms
+[I 161126 09:28:30 web:1946] 304 GET / (127.0.0.1) 567.52ms
+[I 161126 09:28:33 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 67.32ms
+[E 161126 09:28:49 session:24] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+[E 161126 09:28:49 web:1524] Uncaught exception GET /api/check_login (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/check_login', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'X-Requested-With': 'XMLHttpRequest', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://127.0.0.1:8000/', 'Cookie': 'session_id="2|1:0|10:1480068947|10:session_id|44:ZWJiYzg1ODVhMzc4NGM3NzljY2MyMTUzYWE4NzQwNDI=|bf1d4bfb83fcecc12ebe9aa36cee1f279b70b43c76b99f35fc6ab8c00e418e3a"; _xsrf=2|d9c95f57|d10cf191e27c31e27548a36160ce738a|1480075440', 'If-None-Match': '"135840801ed33fefbc5099a23e26152ae5258ad3"'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/Tornado_Project_03/handlers/Passport.py", line 67, in get
+        if self.get_current_user():
+      File "/home/python/Desktop/Tornado_Project_03/handlers/BaseHandler.py", line 31, in get_current_user
+        self.session = Session(self)
+      File "/home/python/Desktop/Tornado_Project_03/utils/session.py", line 26, in __init__
+        if not data:
+    UnboundLocalError: local variable 'data' referenced before assignment
+[E 161126 09:28:49 web:1946] 500 GET /api/check_login (127.0.0.1) 297.52ms
+[I 161126 09:29:44 web:1946] 304 GET / (127.0.0.1) 15.67ms
+[I 161126 09:29:44 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 39.08ms
+[I 161126 09:29:44 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 32.68ms
+[I 161126 09:29:44 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 8.90ms
+[I 161126 09:29:44 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 17.87ms
+[I 161126 09:29:44 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 14.12ms
+[I 161126 09:29:44 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 16.63ms
+[I 161126 09:29:44 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 3.45ms
+[I 161126 09:29:44 web:1946] 304 GET /static/js/template.js (127.0.0.1) 35.35ms
+[I 161126 09:29:44 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 21.57ms
+[I 161126 09:29:44 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 40.27ms
+[I 161126 09:29:44 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 13.46ms
+[I 161126 09:29:44 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 15.90ms
+[I 161126 09:29:44 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 6.38ms
+[I 161126 09:29:44 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 1.94ms
+[I 161126 09:29:44 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 37.69ms
+[I 161126 09:29:45 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 58.09ms
+[I 161126 09:29:45 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 13.04ms
+[I 161126 09:29:45 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 66.08ms
+[I 161126 09:29:45 web:1946] 200 GET /api/check_login (127.0.0.1) 19.98ms
+[I 161126 09:29:45 web:1946] 200 GET /favicon.ico (127.0.0.1) 31.87ms
+[I 161126 09:30:18 web:1946] 304 GET /static/js/ihome/my.js (127.0.0.1) 28.64ms
+[I 161126 09:32:18 web:1946] 304 GET /profile.html (127.0.0.1) 8.02ms
+[I 161126 09:32:18 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 29.07ms
+[I 161126 09:32:49 autoreload:204] /home/python/Desktop/Tornado_Project_03/handlers/Profile.py modified; restarting server
+[I 161126 10:04:59 autoreload:204] /home/python/Desktop/Tornado_Project_03/urls.py modified; restarting server
